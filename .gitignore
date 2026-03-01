@@ -76,3 +76,5 @@ crashlytics-build.properties
 
 # End of https://www.toptal.com/developers/gitignore/api/unity
 /CS4700_Assignment3/Logs
+/CS4700_Assignment3/Logs
+*.log
