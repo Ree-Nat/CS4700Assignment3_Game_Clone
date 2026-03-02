@@ -39,7 +39,6 @@ public class PlayerController : MonoBehaviour
     public float player_maxSpeed = 14;
     public float acceleration = 10f;
     public float sprint_acceleration = 10f;
-    private float player_linearVelocity;
 
     //Jump variables
     public bool grounded;
@@ -50,7 +49,6 @@ public class PlayerController : MonoBehaviour
     public float descentGravityScale = 2f;
     private float normalGravityScale = 1f;
     private bool jumpReleased = false;
-    private bool reachedApex = false;
     private bool isJumping = false;
     RaycastHit2D groundHit;
     [SerializeField] private LayerMask groundLayer;
