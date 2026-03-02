@@ -44,15 +44,16 @@ public class PlayerController : MonoBehaviour
     //Jump variables
     public bool grounded;
     public float jumpSpeed = 3f; 
-    public float groundDetectionRayLength = 1f;
+    public float groundDetectionRayLength = 0.1f;
     public float holdTime = 0f;
-    public float maxHoldTime = 3f;
+    public float maxHoldTime = 0.5f;
     public float descentGravityScale = 2f;
     private float normalGravityScale = 1f;
     private bool jumpReleased = false;
     private bool reachedApex = false;
     private bool isJumping = false;
     RaycastHit2D groundHit;
+    [SerializeField] private LayerMask groundLayer;
 
 
     // Purpose : Enables action map if object is destroyed or disabled
@@ -94,11 +95,36 @@ public class PlayerController : MonoBehaviour
     private void FixedUpdate()
     {
         moveValue = moveAction.ReadValue<Vector2>();
-
+        grounded = isGrounded();
+        JumpChecks();
         if (jumpAction.IsPressed())
         {
-           
-            handleJump();
+            if (grounded && player_rigidbody.linearVelocityY >= 0)
+            {
+                player_rigidbody.gravityScale = normalGravityScale;
+                player_rigidbody.linearVelocity = new Vector2(player_rigidbody.linearVelocity.x, jumpSpeed);
+                grounded = false;
+                isJumping = true;
+            }
+
+            else if (!grounded && isJumping && !jumpReleased & player_rigidbody.linearVelocityY >= 0)
+            {
+                if (checkJumpDuration())
+                {
+                    player_rigidbody.AddForce(new Vector2(0, jumpSpeed), ForceMode2D.Force);
+                }
+            }
+            else
+            {
+                player_rigidbody.gravityScale = descentGravityScale;
+                player_rigidbody.AddForce(Vector2.down);
+            }
+            if (grounded)
+            {
+                holdTime = 0f;
+                isJumping = false;
+                player_rigidbody.gravityScale = normalGravityScale;
+            }
         }
 
         if (moveAction.IsPressed() && sprintAction.IsPressed() && moveValue != Vector2.zero)
@@ -126,10 +152,10 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    /*
     private void handleJump()
     {
-        grounded = isGrounded();
-        JumpChecks();
+       
         if(grounded && player_rigidbody.linearVelocityY >= 0)
          {
             player_rigidbody.gravityScale = normalGravityScale;
@@ -137,15 +163,19 @@ public class PlayerController : MonoBehaviour
             grounded= false;
             isJumping = true;
          }
-        else if(!grounded && checkJumpDuration() && isJumping)
+
+        else if(!grounded && isJumping && !jumpReleased & player_rigidbody.linearVelocityY >= 0 )
         {
-            player_rigidbody.linearVelocity += new Vector2(0, jumpSpeed);
+            if(checkJumpDuration())
+            {
+               player_rigidbody.AddForce(new Vector2(0, jumpSpeed), ForceMode2D.Force);
+            }
         }
-        else if (player_rigidbody.linearVelocityY < 0  || jumpReleased)
+        else
         {
             player_rigidbody.gravityScale = descentGravityScale;
+            player_rigidbody.AddForce(Vector2.down);
         }
-
         if (grounded)
         {
             holdTime = 0f;
@@ -154,6 +184,7 @@ public class PlayerController : MonoBehaviour
         }
 
     }
+    */
 
     //Purpose: Checks to see if holding down button duration is reached
     private bool checkJumpDuration()
@@ -178,7 +209,7 @@ public class PlayerController : MonoBehaviour
             holdTime += Time.deltaTime;
         }
 
-        if(jumpAction.WasReleasedThisFrame())
+        if (jumpAction.WasReleasedThisFrame()) 
         {
             jumpReleased = true;
             holdTime = 0f;
@@ -195,8 +226,8 @@ public class PlayerController : MonoBehaviour
         Vector2 boxCastOrigin = new Vector2(player_feetColl.bounds.center.x, player_feetColl.bounds.min.y);
         Vector2 boxCastSize = new Vector2(player_feetColl.bounds.size.x, groundDetectionRayLength);
 
-        groundHit = Physics2D.BoxCast(boxCastOrigin, boxCastSize, 0f, Vector2.down, groundDetectionRayLength);
-        if(groundHit.collider)
+        groundHit = Physics2D.BoxCast(boxCastOrigin, boxCastSize, 0f, Vector2.down, groundDetectionRayLength, groundLayer);
+        if(groundHit)
         {
             return true;
         }

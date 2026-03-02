@@ -523,7 +523,7 @@ MonoBehaviour:
   sprint_acceleration: 10
   grounded: 0
   jumpSpeed: 3
-  groundDetectionRayLength: 1
+  groundDetectionRayLength: 0.01
   holdTime: 0
   maxHoldTime: 3
   descentGravityScale: 1
