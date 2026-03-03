@@ -5,7 +5,7 @@ public class TimerController : MonoBehaviour
 *author: T. Diaz
 *class: CS 4700 ? Game Development
 *assignment: program 1
-*date last modified: 3/2/2026
+*date last modified: 3/1/2026
 *
 *purpose: This program controls the game timer. After checking if it is 0, sends a game over message to GameController object
 *
