@@ -24,48 +24,62 @@ using UnityEngine;
 using System.Numerics;
 using Vector2 = UnityEngine.Vector2;
 using Unity.Collections;
+using Vector3 = UnityEngine.Vector3;
 
 public class CameraController : MonoBehaviour
 {
-
-    private GameObject camera;
-    private RaycastHit2D centerRay;
+    public GameObject player;
+    public Collider2D trackingCollider;
+    public int rayCastLength;
+    public float startVector_XOffset;
+    public float startVector_YOffset;
+    [SerializeField] private LayerMask playerLayer;
     private RaycastHit2D beginningRay;
-    private Vector2 centerPoint; 
-    private GameObject player;
-    
-    private Vector2 playerOrigin;
     private Vector2 gameStartVector;
-
-    public int rayCastLength; 
+    private Vector2 offest;
+    bool cameraLock; 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        Vector2 centerPoint = getCameraCenterPoint();
-        Vector2 gameStartVector = getPlayerXPos();
-        RaycastHit2D beginningRay = Physics2D.Raycast(gameStartVector, Vector2.up, Mathf.Infinity);
+        //offsetts the ray so middle vector and beginning vector do not overlap
+        gameStartVector = new Vector2(transform.position.x, transform.position.y) + new Vector2(startVector_XOffset, startVector_YOffset);
+        cameraLock = false;
     }
 
     // Update is called once per frame
     void Update()
     {
-        /*
-        if playerHitCenterPoint()
+        beginningRay = Physics2D.Raycast(gameStartVector, Vector2.up, Mathf.Infinity, playerLayer);
+        Debug.DrawRay(gameStartVector, Vector2.up);
+        if(beginningRay.collider)
         {
-            BegintrackObject() // make camera transfrom x == player transform-x
+            cameraLock = false;
         }
-        else if playerHitBeginningPoint()
+        if (cameraLock == true) {
+            transform.position = new Vector3(player.transform.position.x, 0, transform.position.z);
+        }
+        else if (cameraLock == false && playerHitCenterPoint() == true)
         {
-            delockTracking() //line shifts left to delock camera from object
+            cameraLock = true;
+            transform.position = new Vector3(player.transform.position.x, 0, transform.position.z);
         }
-        */
+       
     }
 
     // Purpose get the Camera vector center point in order to draw raycast
+    
+    private bool playerHitCenterPoint()
+    {
+        if (player.transform.position.x >= transform.position.x)
+            return true; 
+        return false;
+    }
+
+
     private Vector2 getCameraCenterPoint()
     {
-        float x_center = camera.transform.position.x;
+        float x_center = transform.position.x;
         return new Vector2(x_center, 0);
 
     }
@@ -78,11 +92,5 @@ public class CameraController : MonoBehaviour
 
     }
 
-    private Vector2 getPlayerXYPos()
-    {
-        float player_x = player.transform.position.x;
-        float player_y = player.transform.position.y;
-        return new Vector2(player_x, player_y);
+ }
 
-    }
-}
