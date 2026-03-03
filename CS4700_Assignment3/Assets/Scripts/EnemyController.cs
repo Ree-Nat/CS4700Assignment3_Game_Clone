@@ -14,36 +14,55 @@ using UnityEngine;
 
 public class EnemyController : MonoBehaviour
 {
-
     
-    public Collider2D enemy_hurtbox;
-    public Collider2D enemy_hitbox ;
-
-    public Collider2D playerHurtbox;
-    public Collider2D playerHitBox;
-    public float speed = 1.0f; 
+    public float speed = 1.0f;
+    Rigidbody2D enemy_rigidBody;
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        enemy_rigidBody = GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
     void Update()
     {
+        print("test");
         moveLeft();
     }
 
+    //Move goomba the the left side of the screen
     void moveLeft()
     {
-        transform.position = transform.position - (new Vector3(speed, 0, 0) * Time.deltaTime);
+        //transform.position = transform.position - (new Vector3(speed, 0, 0) * Time.deltaTime);
+        //enemy_rigidBody.AddForce(new Vector2 (0, 0));
+
+        enemy_rigidBody.linearVelocity = new Vector2(-speed, enemy_rigidBody.linearVelocityY);
     }
 
-    void OTriggerEnter2D(Collider2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        print("now colliding");
+        if(collision.gameObject.name == "PlayerHitBox")
+        {
+            destroySelf();
+        }
+        else if(collision.gameObject.name == "PlayerHurtBox")
+        {
+            damage(collision.gameObject);
+        }
+
+    }
+
+    //DO stuff with gameObject
+    private void damage(GameObject entity)
+    {
+
+    }
+
+    private void destroySelf()
+    {
+        GameObject.Destroy(gameObject); 
     }
 }
     

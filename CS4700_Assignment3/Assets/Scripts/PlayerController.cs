@@ -199,6 +199,8 @@ public class PlayerController : MonoBehaviour
 
     }
 
+    //Purpose: Checks to see if jump conditions are met in order to help with logical conditions 
+    //in the update class.
     private void JumpChecks()
     {
         if(jumpAction.IsPressed())
@@ -219,6 +221,7 @@ public class PlayerController : MonoBehaviour
 
     #region Collision Checks
 
+    //Checks to see if player is grounded in order to ensure player does not double jump
     private bool isGrounded()
     {
         Vector2 boxCastOrigin = new Vector2(player_feetColl.bounds.center.x, player_feetColl.bounds.min.y);
