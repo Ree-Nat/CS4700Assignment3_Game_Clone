@@ -460,3 +460,35 @@ Memory consumption went from 147.6 MB to 144.5 MB.
 Total: 75.076833 ms (FindLiveObjects: 2.579417 ms CreateObjectMapping: 0.596375 ms MarkObjects: 68.074125 ms  DeleteObjects: 3.825750 ms)
 
 Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wireframe' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wireframe' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+Refreshing native plugins compatible for Editor in 1.30 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 17 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6901 unused Assets / (2.6 MB). Loaded Objects now: 7737.
+Memory consumption went from 147.6 MB to 145.0 MB.
+Total: 58.121250 ms (FindLiveObjects: 2.761916 ms CreateObjectMapping: 0.776083 ms MarkObjects: 49.967084 ms  DeleteObjects: 4.615083 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wireframe' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wireframe' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+Refreshing native plugins compatible for Editor in 6.28 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 17 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6901 unused Assets / (3.7 MB). Loaded Objects now: 7737.
+Memory consumption went from 147.6 MB to 143.9 MB.
+Total: 155.949875 ms (FindLiveObjects: 6.248125 ms CreateObjectMapping: 1.557834 ms MarkObjects: 136.634708 ms  DeleteObjects: 11.501833 ms)
+
+Prepare: number of updated asset objects reloaded= 0
