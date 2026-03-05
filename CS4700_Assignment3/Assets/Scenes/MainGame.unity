@@ -3369,7 +3369,7 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDamping: 0.1
+  m_LinearDamping: 0
   m_AngularDamping: 0.05
   m_GravityScale: 1
   m_Material: {fileID: 0}
@@ -3402,11 +3402,14 @@ MonoBehaviour:
   acceleration: 10
   sprint_acceleration: 10
   grounded: 0
-  jumpSpeed: 4
+  jumpSpeed: 2
   groundDetectionRayLength: 0.5
-  holdTime: 0
+  holdTime: 0.5
   maxHoldTime: 3
-  descentGravityScale: 1.1
+  descentGravityScale: 5
+  jumpHoldForce: 8
+  jumpReleased: 0
+  isJumping: 0
   groundLayer:
     serializedVersion: 2
     m_Bits: 128
@@ -3792,11 +3795,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2886651884875298645, guid: 2b36348bd2139944d9de62a2748d03ae, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.12
+      value: 6.129
       objectReference: {fileID: 0}
     - target: {fileID: 2886651884875298645, guid: 2b36348bd2139944d9de62a2748d03ae, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.44
+      value: 0.093
       objectReference: {fileID: 0}
     - target: {fileID: 2886651884875298645, guid: 2b36348bd2139944d9de62a2748d03ae, type: 3}
       propertyPath: m_LocalPosition.z

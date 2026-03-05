@@ -47,9 +47,10 @@ public class PlayerController : MonoBehaviour
     public float holdTime = 0f;
     public float maxHoldTime = 0.5f;
     public float descentGravityScale = 2f;
+    public float jumpHoldForce = 8f;
     private float normalGravityScale = 1f;
-    private bool jumpReleased = false;
-    private bool isJumping = false;
+    public bool jumpReleased = false;
+    public bool isJumping = false;
     RaycastHit2D groundHit;
     [SerializeField] private LayerMask groundLayer;
 
@@ -93,96 +94,75 @@ public class PlayerController : MonoBehaviour
     private void FixedUpdate()
     {
         moveValue = moveAction.ReadValue<Vector2>();
+
+        
+
+        if (moveAction.IsPressed() && sprintAction.IsPressed() )
+        {
+            {
+                player_rigidbody.AddForce(moveValue * sprint_acceleration, ForceMode2D.Force);
+                if (Mathf.Abs(player_rigidbody.linearVelocityX) > player_maxSpeed)
+                {
+                    //add opposing force to deal with constant acceleration
+                    print("reached max sprinting speed");
+                    player_rigidbody.AddForce(-player_rigidbody.linearVelocity.normalized * sprint_acceleration, ForceMode2D.Force);
+                }
+            }
+        }
+
+        else if (moveAction.IsPressed())
+        {
+            player_rigidbody.AddForce(moveValue * acceleration, ForceMode2D.Force);
+
+            if (Mathf.Abs(player_rigidbody.linearVelocityX) > player_speed)
+            {
+                //add opposing force to deal with constant acceleration
+                player_rigidbody.AddForce(-player_rigidbody.linearVelocity.normalized * acceleration, ForceMode2D.Force);
+            }
+        }
+
         grounded = isGrounded();
         JumpChecks();
         if (jumpAction.IsPressed())
         {
-            if (grounded && player_rigidbody.linearVelocityY >= 0)
-            {
-                player_rigidbody.gravityScale = normalGravityScale;
-                player_rigidbody.linearVelocity = new Vector2(player_rigidbody.linearVelocity.x, jumpSpeed);
-                grounded = false;
-                isJumping = true;
-            }
-
-            else if (!grounded && isJumping && !jumpReleased & player_rigidbody.linearVelocityY >= 0)
-            {
-                if (checkJumpDuration())
-                {
-                    player_rigidbody.AddForce(new Vector2(0, jumpSpeed), ForceMode2D.Force);
-                }
-            }
-            else
-            {
-                player_rigidbody.gravityScale = descentGravityScale;
-                player_rigidbody.AddForce(Vector2.down);
-            }
-            if (grounded)
-            {
-                holdTime = 0f;
-                isJumping = false;
-                player_rigidbody.gravityScale = normalGravityScale;
-            }
+           
+            HandleJump();
         }
-
-        if (moveAction.IsPressed() && sprintAction.IsPressed() && moveValue != Vector2.zero)
+        /*
+        if(player_rigidbody.linearVelocityY < 0 && !grounded)
         {
-            {
-                player_rigidbody.AddForce(moveValue * sprint_acceleration, ForceMode2D.Force);
-                if (player_rigidbody.linearVelocity.magnitude > player_maxSpeed)
-                {
-                    //add opposing force to deal with constant acceleration
-                    print("reached max sprinting speed");
-                    player_rigidbody.AddForce(-moveValue * sprint_acceleration, ForceMode2D.Force);
-                }
-            }
+            player_rigidbody.gravityScale = descentGravityScale;
         }
-
-        else if (moveAction.IsPressed() && moveValue != Vector2.zero)
-        {
-            player_rigidbody.AddForce(moveValue * acceleration, ForceMode2D.Force);
-
-            if (player_rigidbody.linearVelocity.magnitude > player_speed)
-            {
-                //add opposing force to deal with constant acceleration
-                player_rigidbody.AddForce(-moveValue * acceleration, ForceMode2D.Force);
-            }
-        }
+        */
     }
 
-    /*
-    private void handleJump()
-    {
-       
-        if(grounded && player_rigidbody.linearVelocityY >= 0)
-         {
-            player_rigidbody.gravityScale = normalGravityScale;
-            player_rigidbody.linearVelocity = new Vector2(player_rigidbody.linearVelocity.x, jumpSpeed);
-            grounded= false;
-            isJumping = true;
-         }
 
-        else if(!grounded && isJumping && !jumpReleased & player_rigidbody.linearVelocityY >= 0 )
+    private void HandleJump()
+    {
+        
+        if (grounded)
+         {
+
+            player_rigidbody.gravityScale = normalGravityScale;
+            player_rigidbody.AddForce(new Vector2(0f, jumpSpeed), ForceMode2D.Impulse);
+            grounded = false;
+            isJumping = true;
+        }
+
+        else if(!grounded && isJumping && !jumpReleased & player_rigidbody.linearVelocityY > 0f)
         {
             if(checkJumpDuration())
             {
-               player_rigidbody.AddForce(new Vector2(0, jumpSpeed), ForceMode2D.Force);
+                player_rigidbody.AddForce(new Vector2(0f, jumpHoldForce), ForceMode2D.Force);
             }
         }
         else
         {
-            player_rigidbody.gravityScale = descentGravityScale;
-            player_rigidbody.AddForce(Vector2.down);
-        }
-        if (grounded)
-        {
-            holdTime = 0f;
             isJumping = false;
-            player_rigidbody.gravityScale = normalGravityScale;
+            holdTime = 0f;
         }
 
     }
-    */
 
     //Purpose: Checks to see if holding down button duration is reached
     private bool checkJumpDuration()
@@ -206,7 +186,7 @@ public class PlayerController : MonoBehaviour
         if(jumpAction.IsPressed())
         {
             jumpReleased = false;
-            holdTime += Time.deltaTime;
+            holdTime += Time.fixedDeltaTime;
         }
 
         if (jumpAction.WasReleasedThisFrame()) 
