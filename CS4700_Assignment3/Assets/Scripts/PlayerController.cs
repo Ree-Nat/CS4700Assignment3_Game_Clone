@@ -42,12 +42,12 @@ public class PlayerController : MonoBehaviour
 
     //Jump variables
     public bool grounded;
-    public float jumpSpeed = 3f; 
+    public float jumpSpeed = 1f; 
     public float groundDetectionRayLength = 0.1f;
     public float holdTime = 0f;
-    public float maxHoldTime = 0.5f;
-    public float descentGravityScale = 2f;
-    public float jumpHoldForce = 8f;
+    public float maxHoldTime = 0.06f;
+    public float descentGravityScale = 5f;
+    public float jumpHoldForce = 2f;
     private float normalGravityScale = 1f;
     public bool jumpReleased = false;
     public bool isJumping = false;
@@ -148,14 +148,6 @@ public class PlayerController : MonoBehaviour
             grounded = false;
             isJumping = true;
         }
-
-        else if(!grounded && isJumping && !jumpReleased & player_rigidbody.linearVelocityY > 0f)
-        {
-            if(checkJumpDuration())
-            {
-                player_rigidbody.AddForce(new Vector2(0f, jumpHoldForce), ForceMode2D.Force);
-            }
-        }
         else
         {
             isJumping = false;
@@ -189,10 +181,17 @@ public class PlayerController : MonoBehaviour
             holdTime += Time.fixedDeltaTime;
         }
 
-        if (jumpAction.WasReleasedThisFrame()) 
+        if (jumpAction.WasReleasedThisFrame())
         {
             jumpReleased = true;
             holdTime = 0f;
+
+            // Cut jump short if still going up
+        if (player_rigidbody.linearVelocityY > 0f)
+            player_rigidbody.linearVelocity = new Vector2(
+            player_rigidbody.linearVelocityX,
+            player_rigidbody.linearVelocityY * 0.5f  // try 0.3–0.6
+        );
         }
 
     }
