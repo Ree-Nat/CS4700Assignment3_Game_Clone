@@ -7,7 +7,7 @@ public class TimerController : MonoBehaviour
 *assignment: program 1
 *date last modified: 3/1/2026
 *
-*purpose: This program controls the game timer. After checking if it is 0, sends a game over message to GameController object
+*purpose: This program controls the game timer. After checking if it is 0, sends a game over message to GameManager object
 *
 ****************************************************************/
 {
@@ -29,6 +29,11 @@ public class TimerController : MonoBehaviour
         {
             decreaseClock();
             checkIfEnded();
+        }
+        else
+        {
+            GameManager.gameManagerInstance.gameOver();
+            Destroy(gameObject);
         }
     }
 
@@ -56,6 +61,13 @@ public class TimerController : MonoBehaviour
     public int getTime()
     {
         return (int) Mathf.Round(currentTime);
+    }
+
+    //Purpose: resets the timer to 0
+    public void resetTime()
+    {
+        currentTime = 0;
+        isEnded = false; 
     }
 
 }
