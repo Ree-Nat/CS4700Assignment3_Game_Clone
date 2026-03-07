@@ -17,7 +17,7 @@ public class BrickController : MonoBehaviour
     //Breaks when player hurtbox hit object
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.gameObject.name == "PlayerHurtBox")
+        if(collision.gameObject.name == "playerHeadBox")
         {
             GameObject.Destroy(gameObject);
         }
