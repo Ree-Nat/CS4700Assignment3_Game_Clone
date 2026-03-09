@@ -10,7 +10,7 @@ using UnityEngine.InputSystem;
 *author: Nathan Rinon, Jackob Takaoka
 *class: CS 4700 ? Game Development
 *assignment: program 1
-*date last modified: 3/26/2026
+*date last modified: 3/3/2026
 *
 *purpose: This program controls the player input by using the inbuilt Unity Input System and rigid body physics. 
 *

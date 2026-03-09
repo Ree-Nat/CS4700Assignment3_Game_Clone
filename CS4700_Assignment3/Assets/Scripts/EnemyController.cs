@@ -39,7 +39,12 @@ public class EnemyController : MonoBehaviour
 
         enemy_rigidBody.linearVelocity = new Vector2(-speed, enemy_rigidBody.linearVelocityY);
     }
-
+    //Move goomba the the right side of the screen
+    void moveRight()
+    {
+        enemy_rigidBody.linearVelocity = new Vector2(speed, enemy_rigidBody.linearVelocityY);
+    }
+         
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if(collision.gameObject.name == "PlayerHitBox")
