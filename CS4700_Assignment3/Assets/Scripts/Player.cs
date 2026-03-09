@@ -2,7 +2,7 @@ using UnityEngine;
 
 
 
-public class Player : MonoBehaviour { 
+public class Player : MonoBehaviour 
 {
     public int _defaultLives;
     public int _lives;
