@@ -3,7 +3,10 @@ using System.Runtime.CompilerServices;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
-
+using System.Numerics;
+using Vector2 = UnityEngine.Vector2;
+using Unity.Collections;
+using Vector3 = UnityEngine.Vector3;
 
 
 
@@ -20,11 +23,8 @@ using UnityEngine.InputSystem;
 * to the original time the ray was when the scene is loaded. 
 ****************************************************************/
 
-using UnityEngine;
-using System.Numerics;
-using Vector2 = UnityEngine.Vector2;
-using Unity.Collections;
-using Vector3 = UnityEngine.Vector3;
+
+
 
 public class CameraController : MonoBehaviour
 {

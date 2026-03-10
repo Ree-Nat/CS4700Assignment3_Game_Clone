@@ -47,22 +47,20 @@ public class EnemyController : MonoBehaviour
          
     private void OnTriggerEnter2D(Collider2D collision)
     {
+
+        GameObject other = collision.gameObject;
+
         if(collision.gameObject.name == "PlayerHitBox")
         {
             destroySelf();
         }
         else if(collision.gameObject.name == "PlayerHurtBox")
         {
-            damage(collision.gameObject);
+            other.GetComponentInParent<Player>().takeDamage();
         }
 
     }
 
-    //DO stuff with gameObject
-    private void damage(GameObject entity)
-    {
-
-    }
 
     private void destroySelf()
     {

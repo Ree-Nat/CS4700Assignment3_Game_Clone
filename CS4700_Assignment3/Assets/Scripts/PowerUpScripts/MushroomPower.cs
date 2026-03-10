@@ -1,15 +1,16 @@
 using UnityEngine;
 
 
-public class MushroomPower : PowerUp
+public class MushroomPower : IPowerUp
 {
 
     private int heightMultiplier = 2;
 
-    public override void applyPowerUp(Player player)
+    public PowerState ApplyPowerUp(Player player)
     {
-        Vector3 playerScale = player.gameObject.transform.localScale;
-        playerScale = new Vector3(playerScale.x, playerScale.y * heightMultiplier, playerScale.z);
+        Transform t = player.gameObject.transform;
+        t.localScale = new Vector3(t.localScale.x, t.localScale.y * heightMultiplier, t.localScale.z);
+        return PowerState.Mushroom;
     }
-    
+
 }

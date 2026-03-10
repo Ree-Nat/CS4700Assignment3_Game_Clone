@@ -2,14 +2,20 @@ using UnityEngine;
 
 
 
-public class Player : MonoBehaviour 
-{
+public class Player : MonoBehaviour { 
     public int _defaultLives;
     public int _lives;
     public PowerState _currentState;
+    private PowerManager powerManager;
 
+
+
+    private void Awake()
+    {
+    }
     private void Start()
     {
+        powerManager = new PowerManager();
         this._defaultLives = 3;
         _currentState = PowerState.None;
     }
@@ -38,12 +44,24 @@ public class Player : MonoBehaviour
     {
         if(_currentState != PowerState.None)
         {
-           _currentState = PowerState.None;
+            // powerManager.changePlayerPower(this, PowerState.None);
+
+            setPower(PowerState.None);
         }
-        else
+        else if(_lives == 0)
+        {
+            GameManager.gameManagerInstance.gameOver();
+        }
         {
             decreaseLives();
         }
+
+    }
+
+    public void setPower(PowerState power)
+    {
+        powerManager.changePlayerPower(this, power);
+        this._currentState = power;
     }
 
     public bool checkDead()
@@ -60,8 +78,4 @@ public class Player : MonoBehaviour
         return this._currentState;
     }
 
-    public void setPowerState(PowerState powerState)
-    {
-        this._currentState = powerState;
-    }
 }

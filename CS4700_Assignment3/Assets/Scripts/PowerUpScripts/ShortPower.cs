@@ -2,15 +2,16 @@ using Unity.VisualScripting;
 using UnityEngine;
 
 
-public class ShortPower : PowerUp
+public class ShortPower : IPowerUp
 {
 	
 	private int heightDivider = 2;
 		
-	public override void applyPowerUp(Player player)
+	public PowerState ApplyPowerUp(Player player)
 	{
-		Vector3 playerScale = player.gameObject.transform.localScale;
-		playerScale = new Vector3(playerScale.x, playerScale.y / heightDivider, playerScale.z);
-	}
+        Transform t = player.gameObject.transform;
+        t.localScale = new Vector3(t.localScale.x, t.localScale.y / heightDivider, t.localScale.z);
+        return PowerState.Mushroom;
+    }
 
 }
