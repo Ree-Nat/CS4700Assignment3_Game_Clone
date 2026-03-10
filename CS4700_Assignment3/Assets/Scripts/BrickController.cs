@@ -13,6 +13,8 @@ using UnityEngine;
 
 public class BrickController : MonoBehaviour
 {
+
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -24,6 +26,12 @@ public class BrickController : MonoBehaviour
     {
         
     }
+
+
+    private void spawnEntity(GameObject powerEntity)
+    {
+
+    }
         
     //Breaks when player hurtbox hit object
     private void OnTriggerEnter2D(Collider2D collision)
@@ -31,6 +39,11 @@ public class BrickController : MonoBehaviour
         if(collision.gameObject.name == "playerHeadBox")
         {
             GameObject.Destroy(gameObject);
+        }
+
+        if(collision.gameObject.tag == "SpecialBrick")
+        {
+
         }
     }
 }
