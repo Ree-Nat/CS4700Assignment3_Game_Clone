@@ -1,3 +1,4 @@
+using System.Runtime.CompilerServices;
 using Unity.VisualScripting;
 using UnityEngine;
 
@@ -21,6 +22,7 @@ public class EnemyController : MonoBehaviour
     [SerializeField] private float knockBack = 5.0f;
     [SerializeField] private Rigidbody2D player_rigidBody;
     private Rigidbody2D enemy_rigidBody;
+    private bool hasSpawned = false;
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -54,6 +56,7 @@ public class EnemyController : MonoBehaviour
     {
         
         GameObject other = collision.gameObject;
+
         if(collision.gameObject.name == "PlayerHitBox" && 
            hasSecondPhase == false)
         {
@@ -63,9 +66,14 @@ public class EnemyController : MonoBehaviour
         else if(collision.gameObject.name == "PlayerHitBox"
         && hasSecondPhase == true)
         {
-            Destroy(gameObject); 
-            Instantiate(secondPhaseAsset, transform.position, Quaternion.identity);
+
+            //logic to defend against duplicate spawn
+            if(hasSpawned == true) return; 
+            hasSpawned = true;
+
+            Destroy(gameObject);  
             addUpwardForce(player_rigidBody);
+            Instantiate(secondPhaseAsset, transform.position, Quaternion.identity);
         }
 
         if(collision.gameObject.name == "PlayerHurtBox")

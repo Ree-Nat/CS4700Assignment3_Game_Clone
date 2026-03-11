@@ -88,6 +88,10 @@ PrefabInstance:
       propertyPath: speed
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7310260090265685942, guid: 2b36348bd2139944d9de62a2748d03ae, type: 3}
+      propertyPath: knockBack
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 8338328952092241471, guid: 2b36348bd2139944d9de62a2748d03ae, type: 3}
       propertyPath: m_Constraints
       value: 4
