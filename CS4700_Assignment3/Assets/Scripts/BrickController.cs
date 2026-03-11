@@ -31,13 +31,6 @@ public class BrickController : MonoBehaviour
         _spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
-
     //purpose, spawn powerup by taking the position of the brick and 
     //adding 1. 
     private void spawnPowerUp(GameObject powerEntity)
