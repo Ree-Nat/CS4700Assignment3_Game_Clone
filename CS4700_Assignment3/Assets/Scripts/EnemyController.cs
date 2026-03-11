@@ -6,7 +6,7 @@ using UnityEngine;
 *author: Nathan
 *class: CS 4700 ? Game Development
 *assignment: program 1
-*date last modified: 3/3/2022
+*date last modified: 3/11/2026
 *
 *purpose: This program controls enemy's behavior and movment 
 *
@@ -15,7 +15,9 @@ using UnityEngine;
 public class EnemyController : MonoBehaviour
 {
     
-    public float speed = 1.0f;
+    [SerializeField] private float speed = 1.0f;
+    [SerializeField] private bool hasSecondPhase;
+    [SerializeField] private GameObject secondPhaseAsset;
     Rigidbody2D enemy_rigidBody;
 
 
@@ -50,10 +52,17 @@ public class EnemyController : MonoBehaviour
 
         GameObject other = collision.gameObject;
 
-        if(collision.gameObject.name == "PlayerHitBox")
+        if(collision.gameObject.name == "PlayerHitBox" && 
+           hasSecondPhase == false)
         {
             destroySelf();
         }
+        else if(collision.gameObject.name == "PlayerHurtBox"
+        && hasSecondPhase == true)
+        {
+            Instantiate(secondPhaseAsset, transform.position, Quaternion.identity);
+        }
+
         else if(collision.gameObject.name == "PlayerHurtBox")
         {
             other.GetComponentInParent<Player>().takeDamage();
