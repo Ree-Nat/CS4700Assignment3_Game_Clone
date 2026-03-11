@@ -18,12 +18,15 @@ public class EnemyController : MonoBehaviour
     [SerializeField] private float speed = 1.0f;
     [SerializeField] private bool hasSecondPhase;
     [SerializeField] private GameObject secondPhaseAsset;
-    Rigidbody2D enemy_rigidBody;
+    [SerializeField] private float knockBack = 5.0f;
+    [SerializeField] private Rigidbody2D player_rigidBody;
+    private Rigidbody2D enemy_rigidBody;
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        player_rigidBody = GameObject.FindWithTag("Player").GetComponent<Rigidbody2D>();
         enemy_rigidBody = GetComponent<Rigidbody2D>();
     }
 
@@ -49,25 +52,32 @@ public class EnemyController : MonoBehaviour
          
     private void OnTriggerEnter2D(Collider2D collision)
     {
-
+        
         GameObject other = collision.gameObject;
-
         if(collision.gameObject.name == "PlayerHitBox" && 
            hasSecondPhase == false)
         {
             destroySelf();
+            addUpwardForce(player_rigidBody);
         }
-        else if(collision.gameObject.name == "PlayerHurtBox"
+        else if(collision.gameObject.name == "PlayerHitBox"
         && hasSecondPhase == true)
         {
+            Destroy(gameObject); 
             Instantiate(secondPhaseAsset, transform.position, Quaternion.identity);
+            addUpwardForce(player_rigidBody);
         }
 
-        else if(collision.gameObject.name == "PlayerHurtBox")
+        if(collision.gameObject.name == "PlayerHurtBox")
         {
             other.GetComponentInParent<Player>().takeDamage();
         }
 
+    }
+
+    private void addUpwardForce(Rigidbody2D player_rigidBody)
+    {
+        player_rigidBody.AddForce(Vector2.up * knockBack, ForceMode2D.Impulse);
     }
 
 

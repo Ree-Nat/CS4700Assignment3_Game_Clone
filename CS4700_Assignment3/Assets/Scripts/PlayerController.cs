@@ -167,9 +167,13 @@ public class PlayerController : MonoBehaviour
         {
             return false;
         }
-
-
     }
+
+    public Rigidbody2D GetRigidbody2D()
+    {
+        return this.player_rigidbody;
+    }
+
 
     //Purpose: Checks to see if jump conditions are met in order to help with logical conditions 
     //in the update class.

@@ -89,6 +89,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7310260090265685942, guid: 2b36348bd2139944d9de62a2748d03ae, type: 3}
+      propertyPath: hasSecondPhase
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7310260090265685942, guid: 2b36348bd2139944d9de62a2748d03ae, type: 3}
       propertyPath: secondPhaseAsset
       value: 
       objectReference: {fileID: 2909771463323929517, guid: 925fb88c1c88a422da801afa4c316556, type: 3}
