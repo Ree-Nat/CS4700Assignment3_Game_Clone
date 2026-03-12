@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &462044221512414801
+--- !u!1001 &9081211555102259763
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -10,11 +10,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2886651884875298645, guid: 2b36348bd2139944d9de62a2748d03ae, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.7599307
+      value: 0.723399
       objectReference: {fileID: 0}
     - target: {fileID: 2886651884875298645, guid: 2b36348bd2139944d9de62a2748d03ae, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.7885492
+      value: 1.1031512
       objectReference: {fileID: 0}
     - target: {fileID: 2886651884875298645, guid: 2b36348bd2139944d9de62a2748d03ae, type: 3}
       propertyPath: m_LocalScale.z
@@ -22,11 +22,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2886651884875298645, guid: 2b36348bd2139944d9de62a2748d03ae, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.7783
+      value: -1.46
       objectReference: {fileID: 0}
     - target: {fileID: 2886651884875298645, guid: 2b36348bd2139944d9de62a2748d03ae, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.4291
+      value: -2.35
       objectReference: {fileID: 0}
     - target: {fileID: 2886651884875298645, guid: 2b36348bd2139944d9de62a2748d03ae, type: 3}
       propertyPath: m_LocalPosition.z
@@ -62,36 +62,40 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3316926963229736444, guid: 2b36348bd2139944d9de62a2748d03ae, type: 3}
       propertyPath: m_Name
-      value: EnemyTurtleShell Variant
+      value: EnemyTurtle
       objectReference: {fileID: 0}
     - target: {fileID: 3632540418395831599, guid: 2b36348bd2139944d9de62a2748d03ae, type: 3}
       propertyPath: m_Color.b
-      value: 0.3582236
+      value: 0.11129405
       objectReference: {fileID: 0}
     - target: {fileID: 3632540418395831599, guid: 2b36348bd2139944d9de62a2748d03ae, type: 3}
       propertyPath: m_Color.g
-      value: 0.6603774
+      value: 0.38679248
       objectReference: {fileID: 0}
     - target: {fileID: 3632540418395831599, guid: 2b36348bd2139944d9de62a2748d03ae, type: 3}
       propertyPath: m_Color.r
-      value: 0.4858942
+      value: 0.22896427
       objectReference: {fileID: 0}
     - target: {fileID: 6595487209697015774, guid: 2b36348bd2139944d9de62a2748d03ae, type: 3}
       propertyPath: m_Size.x
-      value: 1.01
+      value: 1.16
       objectReference: {fileID: 0}
     - target: {fileID: 6595487209697015774, guid: 2b36348bd2139944d9de62a2748d03ae, type: 3}
       propertyPath: m_Offset.y
-      value: -0.15
+      value: -0.04
       objectReference: {fileID: 0}
     - target: {fileID: 7310260090265685942, guid: 2b36348bd2139944d9de62a2748d03ae, type: 3}
       propertyPath: speed
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7310260090265685942, guid: 2b36348bd2139944d9de62a2748d03ae, type: 3}
-      propertyPath: knockBack
-      value: 2
+      propertyPath: hasSecondPhase
+      value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7310260090265685942, guid: 2b36348bd2139944d9de62a2748d03ae, type: 3}
+      propertyPath: secondPhaseAsset
+      value: 
+      objectReference: {fileID: 2909771463323929517, guid: 925fb88c1c88a422da801afa4c316556, type: 3}
     - target: {fileID: 8338328952092241471, guid: 2b36348bd2139944d9de62a2748d03ae, type: 3}
       propertyPath: m_Constraints
       value: 4

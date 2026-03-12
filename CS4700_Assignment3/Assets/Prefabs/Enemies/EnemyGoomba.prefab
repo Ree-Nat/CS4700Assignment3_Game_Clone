@@ -171,7 +171,7 @@ GameObject:
   - component: {fileID: 8338328952092241471}
   m_Layer: 0
   m_Name: EnemyGoomba
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -264,11 +264,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72cfb6ad10dc6453d83c2e23a1f4da14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyController
-  enemy_hurtbox: {fileID: 3019987239587791138}
-  enemy_hitbox: {fileID: 6595487209697015774}
-  playerHurtbox: {fileID: 0}
-  playerHitBox: {fileID: 0}
   speed: 1
+  hasSecondPhase: 0
+  secondPhaseAsset: {fileID: 0}
+  knockBack: 5
+  player_rigidBody: {fileID: 0}
 --- !u!61 &7030787029833946261
 BoxCollider2D:
   m_ObjectHideFlags: 0

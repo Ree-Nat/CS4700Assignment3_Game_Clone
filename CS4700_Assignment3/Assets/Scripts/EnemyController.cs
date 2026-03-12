@@ -89,7 +89,7 @@ public class EnemyController : MonoBehaviour
     }
 
 
-    private void destroySelf()
+    public void destroySelf()
     {
         GameObject.Destroy(gameObject); 
     }
