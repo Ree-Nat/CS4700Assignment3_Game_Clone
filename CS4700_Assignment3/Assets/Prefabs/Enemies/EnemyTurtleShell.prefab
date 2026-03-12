@@ -144,8 +144,8 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0.19}
-  m_Radius: 0.53
+  m_Offset: {x: 0, y: 0.06}
+  m_Radius: 0.5
 --- !u!1001 &462044221512414801
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -244,7 +244,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8338328952092241471, guid: 2b36348bd2139944d9de62a2748d03ae, type: 3}
       propertyPath: m_Interpolate
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8338328952092241471, guid: 2b36348bd2139944d9de62a2748d03ae, type: 3}
       propertyPath: m_SleepingMode
