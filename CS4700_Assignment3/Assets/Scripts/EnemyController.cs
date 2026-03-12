@@ -3,10 +3,10 @@ using Unity.VisualScripting;
 using UnityEngine;
 
 /***************************************************************
-*file: DoubleIt.cs
+*file: EnemyController.cs
 *author: Nathan
-*class: CS 4700 ? Game Development
-*assignment: program 1
+*class: CS 4700-1 Game Development
+*assignment: program 3
 *date last modified: 3/11/2026
 *
 *purpose: This program controls enemy's behavior and movment 

@@ -4,9 +4,9 @@ using UnityEngine;
 
 
 /***************************************************************
-*file: DoubleIt.cs
-*author: T. Diaz
-*class: CS 4700 ? Game Development
+*file: Brick Controller.cs
+*author: Nathan Rinon
+*class: CS 4700-1 Game Development
 *assignment: program 1
 *date last modified: 3/11/2026
 *

@@ -2,7 +2,7 @@ using UnityEngine;
 /***************************************************************
 *file: PlayerCoinCounter.cs
 *author: T. Diaz
-*class: CS 4700 - Game Development
+*class: CS 4700-1 Game Development
 *assignment: program 3
 *date last modified: 3/10/2026
 *

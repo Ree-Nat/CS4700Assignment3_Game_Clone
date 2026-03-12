@@ -6,10 +6,10 @@ using UnityEngine.InputSystem;
 
 
 /***************************************************************
-*file: DoubleIt.cs
+*file: PlayerController.cs
 *author: Nathan Rinon, Jackob Takaoka
-*class: CS 4700 ? Game Development
-*assignment: program 1
+*class: CS 4700-1 Game Development
+*assignment: program 3
 *date last modified: 3/3/2026
 *
 *purpose: This program controls the player input by using the inbuilt Unity Input System and rigid body physics. 

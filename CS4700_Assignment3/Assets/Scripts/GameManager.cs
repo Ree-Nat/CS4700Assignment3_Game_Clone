@@ -2,6 +2,18 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+/***************************************************************
+*file: PlayerCoinCounter.cs
+*author: Jacob Takaoka
+*class: CS 4700-1 Game Development
+*assignment: program 3
+*date last modified: 3/12/2026
+*
+*purpose: This script manages the current game runtime, managing switching scenes and end game condition as a singleton.
+****************************************************************/
+
+
+
 public class GameManager : MonoBehaviour
 {
 

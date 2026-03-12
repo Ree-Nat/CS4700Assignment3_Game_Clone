@@ -1,10 +1,10 @@
 using UnityEngine;
 public class TimerController : MonoBehaviour
 /***************************************************************
-*file: DoubleIt.cs
+*file: TimerController.cs
 *author: T. Diaz
-*class: CS 4700 ? Game Development
-*assignment: program 1
+*class: CS 4700-1 Game Development
+*assignment: program 3
 *date last modified: 3/1/2026
 *
 *purpose: This program controls the game timer. After checking if it is 0, sends a game over message to GameManager object

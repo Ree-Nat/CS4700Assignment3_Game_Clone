@@ -1,11 +1,11 @@
 /***************************************************************
-*file: DoubleIt.cs
-*author: Nathan Rinon, Jackob Takaoka
-*class: CS 4700 ? Game Development
+*file: PowerState.cs
+*author: Nathan Rinon
+*class: CS 4700-1 Game Development
 *assignment: program 1
-*date last modified: 3/8/2026
+*date last modified: 3/12/2026
 *
-*purpose: This program creates the player PowerState to control with logic. 
+*purpose: This program creates the player PowerState enum to control with logic. 
 *
 ****************************************************************/
 

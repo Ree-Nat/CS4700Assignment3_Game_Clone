@@ -1,6 +1,14 @@
 using UnityEngine;
 
-
+/***************************************************************
+*file: Player.cs
+*author: Jacob Takaoka
+*class: CS 4700-1 Game Development
+*assignment: program 3
+*date last modified: 3/12/2026
+*
+*purpose: This script modifies and gest the atributs of player with their lives and current power.
+****************************************************************/
 
 public class Player : MonoBehaviour { 
     public int _defaultLives;

@@ -1,5 +1,15 @@
 using UnityEngine;
 
+/***************************************************************
+*file: ShroomController.cs
+*author: Nathan Rinon
+*class: CS 4700-1 Game Development
+*assignment: program 3
+*date last modified: 3/12/2026
+*
+*purpose: This program controls the Shroom asset. It sets the power using its collission with the player component
+****************************************************************/
+
 public class ShroomController : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created

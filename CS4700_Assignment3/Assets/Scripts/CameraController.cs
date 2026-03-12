@@ -11,9 +11,9 @@ using Vector3 = UnityEngine.Vector3;
 
 
 /***************************************************************
-*file: DoubleIt.cs
-*author: T. Diaz
-*class: CS 4700 ? Game Development
+*file: Camera Controller.cs
+*author: Nathan Rinon
+*class: CS 4700-1 Game Development
 *assignment: program 1
 *date last modified: 3/2/2026
 *
