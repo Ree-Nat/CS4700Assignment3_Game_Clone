@@ -1,37 +1,37 @@
 [Licensing::Module] Trying to connect to existing licensing client channel...
 Built from '6000.3/respin/6000.3.5f1-a1ec4b2f2d19' branch; Version is '6000.3.5f2 (3fa8bc678cb0) revision 4171964'; Using compiler version '194234433'; Build Type 'Release'
-OS: 'Windows 11  (10.0.26200) Core' Language: 'en' Physical Memory: 5896 MB
+OS: 'Windows 11  (10.0.26200) Core' Language: 'en' Physical Memory: 16305 MB
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-ohpls" at "2026-03-14T16:14:32.4865953Z"
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-jaket" at "2026-03-14T07:56:32.5049587Z"
 System  architecture: x64
 Process architecture: x64
-Date: 2026-03-14T07:56:32Z
+Date: 2026-03-14T16:14:32Z
 
 COMMAND LINE ARGUMENTS:
-C:\Program Files\Unity\Hub\Editor\6000.3.5f2\Editor\Unity.exe
+E:\GameDev\UnityHubEditors\6000.3.5f2\Editor\Unity.exe
 -adb2
 -batchMode
 -noUpm
 -name
 AssetImportWorker1
 -projectPath
-C:/Users/jaket/Desktop/CS4700Assignment3_Game_Clone-main/cs4700_repo/CS4700_Assignment3
+E:/GameDev/CS4700Assignment3_Game_Clone/CS4700_Assignment3
 -logFile
 Logs/AssetImportWorker1.log
 -srvPort
-57510
+62862
 -licensingIpc
-LicenseClient-jaket
+LicenseClient-ohpls
 -job-worker-count
-5
+7
 -background-job-worker-count
 8
 -gc-helper-count
 1
 -name
 AssetImport
-Successfully changed project path to: C:/Users/jaket/Desktop/CS4700Assignment3_Game_Clone-main/cs4700_repo/CS4700_Assignment3
-C:/Users/jaket/Desktop/CS4700Assignment3_Game_Clone-main/cs4700_repo/CS4700_Assignment3
+Successfully changed project path to: E:/GameDev/CS4700Assignment3_Game_Clone/CS4700_Assignment3
+E:/GameDev/CS4700Assignment3_Game_Clone/CS4700_Assignment3
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
     "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
     "memorysetup-temp-allocator-size-audio-worker=65536"
@@ -67,17 +67,13 @@ C:/Users/jaket/Desktop/CS4700Assignment3_Game_Clone-main/cs4700_repo/CS4700_Assi
     "memorysetup-job-temp-allocator-block-size-background=1048576"
     "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
     "memorysetup-temp-allocator-size-cloud-worker=32768"
-Player connection [25140]  Target information:
+Player connection [7716]  Target information:
 
-Player connection [25140]  * "[IP] 192.168.136.1 [Port] 0 [Flags] 2 [Guid] 3225712793 [EditorId] 3225712793 [Version] 1048832 [Id] WindowsEditor(7,Jacob_Yoga) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [7716]  * "[IP] 192.168.0.174 [Port] 0 [Flags] 2 [Guid] 2324140112 [EditorId] 2324140112 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-O86EU0E) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [25140]  * "[IP] 172.28.160.1 [Port] 0 [Flags] 2 [Guid] 3225712793 [EditorId] 3225712793 [Version] 1048832 [Id] WindowsEditor(7,Jacob_Yoga) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
-
-Player connection [25140]  * "[IP] 192.168.4.41 [Port] 0 [Flags] 2 [Guid] 3225712793 [EditorId] 3225712793 [Version] 1048832 [Id] WindowsEditor(7,Jacob_Yoga) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
-
-Player connection [25140] Host joined multi-casting on [225.0.0.222:54997]...
-Player connection [25140] Host joined alternative multi-casting on [225.0.0.222:34997]...
-JobSystem: Creating JobQueue using job-worker-count value 5
+Player connection [7716] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [7716] Host joined alternative multi-casting on [225.0.0.222:34997]...
+JobSystem: Creating JobQueue using job-worker-count value 7
 Input System module state changed to: Initialized.
 [Physics::Module] Initialized fallback backend.
 [Physics::Module] Id: 0xdecafbad
@@ -88,69 +84,63 @@ Library Redirect Path: Library/
 [Physics::Module] SDK Version: 4.1.2
 [Physics::Module] Integration Version: 1.0.0
 [Physics::Module] Threading Mode: Multi-Threaded
-Refreshing native plugins compatible for Editor in 1473.35 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 5.56 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 6000.3.5f2 (3fa8bc678cb0)
-[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/6000.3.5f2/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path C:/Users/jaket/Desktop/CS4700Assignment3_Game_Clone-main/cs4700_repo/CS4700_Assignment3/Assets
+[Subsystems] Discovering subsystems at path E:/GameDev/UnityHubEditors/6000.3.5f2/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path E:/GameDev/CS4700Assignment3_Game_Clone/CS4700_Assignment3/Assets
 GfxDevice: creating device client; kGfxThreadingModeNonThreaded
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
-    Renderer: AMD Radeon 760M Graphics (ID=0x1900)
-    Vendor:   ATI
-    VRAM:     2948 MB
-    Driver:   32.0.21030.1005
+    Renderer: NVIDIA GeForce RTX 2080 SUPER (ID=0x1e81)
+    Vendor:   NVIDIA
+    VRAM:     7987 MB
+    Driver:   32.0.15.9174
+Shader 'TextMeshPro/Distance Field SSD': fallback shader 'TextMeshPro/Mobile/Distance Field' not found
+Shader 'TextMeshPro/Distance Field': fallback shader 'TextMeshPro/Mobile/Distance Field' not found
+Shader 'TextMeshPro/Distance Field Overlay': fallback shader 'TextMeshPro/Mobile/Distance Field' not found
 Initialize mono
-Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/6000.3.5f2/Editor/Data/Managed'
-Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/6000.3.5f2/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
-Mono config path = 'C:/Program Files/Unity/Hub/Editor/6000.3.5f2/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56236
+Mono path[0] = 'E:/GameDev/UnityHubEditors/6000.3.5f2/Editor/Data/Managed'
+Mono path[1] = 'E:/GameDev/UnityHubEditors/6000.3.5f2/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'E:/GameDev/UnityHubEditors/6000.3.5f2/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56804
 Begin MonoManager ReloadAssembly
-[Licensing::Client] Handshaking with LicensingClient:
-  Version:                 1.17.4+4293ba1
-  Session Id:              a359943496fb4438b69434193ef709ac
-  Correlation Id:          d81a8a733938d4fc0dd556979537e6aa
-  External correlation Id: 5400308677807469010
-  Machine Id:              FN8E9HWivoCs2/Qjs28FORtX7Z0=
-[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-jaket" (connect: 0.00s, validation: 0.27s, handshake: 6.07s)
 Registering precompiled unity dll's ...
-Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.3.5f2/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.089012 seconds.
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-jaket-notifications" at "2026-03-14T07:56:38.9768646Z"
-[Licensing::Module] Licensing Background thread has ended after 6.47s
-- Loaded All Assemblies, in  3.174 seconds
+Register platform support module: E:/GameDev/UnityHubEditors/6000.3.5f2/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.001659 seconds.
+- Loaded All Assemblies, in  0.665 seconds
 Native extension for WindowsStandalone target not found
 ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.224 seconds
-Domain Reload Profiling: 4392ms
-	BeginReloadAssembly (1615ms)
-		ExecutionOrderSort (5ms)
+- Finished resetting the current domain, in  0.626 seconds
+Domain Reload Profiling: 1291ms
+	BeginReloadAssembly (265ms)
+		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (11ms)
-	RebuildCommonClasses (250ms)
-	RebuildNativeTypeToScriptingClass (60ms)
-	initialDomainReloadingComplete (586ms)
-	LoadAllAssembliesAndSetupDomain (657ms)
-		LoadAssemblies (1577ms)
+		CreateAndSetChildDomain (1ms)
+	RebuildCommonClasses (53ms)
+	RebuildNativeTypeToScriptingClass (18ms)
+	initialDomainReloadingComplete (54ms)
+	LoadAllAssembliesAndSetupDomain (275ms)
+		LoadAssemblies (264ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (644ms)
-			TypeCache.Refresh (632ms)
-				TypeCache.ScanAssembly (581ms)
-			BuildScriptInfoCaches (5ms)
-			ResolveRequiredComponents (4ms)
-	FinalizeReload (1225ms)
+		AnalyzeDomain (271ms)
+			TypeCache.Refresh (267ms)
+				TypeCache.ScanAssembly (245ms)
+			BuildScriptInfoCaches (0ms)
+			ResolveRequiredComponents (1ms)
+	FinalizeReload (627ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (967ms)
+		SetupLoadedEditorAssemblies (555ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (185ms)
-			SetLoadedEditorAssemblies (9ms)
-			BeforeProcessingInitializeOnLoad (212ms)
-			ProcessInitializeOnLoadAttributes (358ms)
-			ProcessInitializeOnLoadMethodAttributes (202ms)
+			InitializePlatformSupportModulesInManaged (59ms)
+			SetLoadedEditorAssemblies (6ms)
+			BeforeProcessingInitializeOnLoad (146ms)
+			ProcessInitializeOnLoadAttributes (246ms)
+			ProcessInitializeOnLoadMethodAttributes (98ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -159,14 +149,31 @@ Domain Reload Profiling: 4392ms
 Worker process is ready to serve import requests
 Import Worker Mode flag is 0x00
 Begin MonoManager ReloadAssembly
+[Licensing::Module] Licensing is not yet initialized.
+[Licensing::Client] Error: HandshakeResponse reported an error:
+	ResponseCode: 505
+	ResponseStatus: Unsupported protocol version '1.17.4'.
+[Licensing::Module] Error: Failed to handshake to channel: "LicenseClient-ohpls"
+[Licensing::IpcConnector] LicenseClient-ohpls channel disconnected successfully.
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-ohpls-6000.3.5" at "2026-03-14T16:14:43.9342771Z"
+[Licensing::Client] Handshaking with LicensingClient:
+  Version:                 1.17.4+4293ba1
+  Session Id:              9e596332937049669bd634bb26398743
+  Correlation Id:          7b69911a58911c378ea30dd6aef5b0e8
+  External correlation Id: 2271448233948751886
+  Machine Id:              rQENALAjWuSB5RZ3DkISdE0f6U8=
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-ohpls-6000.3.5" (connect: 0.00s, validation: 0.01s, handshake: 12.02s)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-ohpls-6000.3.5-notifications" at "2026-03-14T16:14:55.9651674Z"
+[Licensing::Module] Licensing Background thread has ended after 23.48s
+[Licensing::Module] Licensing is initialized (took 20.91s).
 [Licensing::Client] Successfully resolved entitlement details
 [Licensing::Module] License group:
-  Id: 1375891665212-UnityPersXXXX
+  Id: 1375193901210-UnityPersXXXX
   Product: Unity Personal
   Type: Assigned
   Expiration: Unlimited
-- Loaded All Assemblies, in  3.686 seconds
-Refreshing native plugins compatible for Editor in 58.39 ms, found 4 plugins.
+- Loaded All Assemblies, in 22.471 seconds
+Refreshing native plugins compatible for Editor in 3.01 ms, found 4 plugins.
 Native extension for WindowsStandalone target not found
 Package Manager log level set to [2]
 [Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
@@ -174,1319 +181,99 @@ Package Manager log level set to [2]
 [Package Manager] Cannot connect to Unity Package Manager local server
 ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  2.695 seconds
-Domain Reload Profiling: 6366ms
-	BeginReloadAssembly (517ms)
+- Finished resetting the current domain, in  1.244 seconds
+Domain Reload Profiling: 23713ms
+	BeginReloadAssembly (21336ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (17ms)
+		DisableScriptedObjects (23ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (82ms)
-	RebuildCommonClasses (80ms)
-	RebuildNativeTypeToScriptingClass (28ms)
-	initialDomainReloadingComplete (92ms)
-	LoadAllAssembliesAndSetupDomain (2952ms)
-		LoadAssemblies (2034ms)
+		CreateAndSetChildDomain (73ms)
+	RebuildCommonClasses (73ms)
+	RebuildNativeTypeToScriptingClass (23ms)
+	initialDomainReloadingComplete (63ms)
+	LoadAllAssembliesAndSetupDomain (973ms)
+		LoadAssemblies (765ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (1209ms)
-			TypeCache.Refresh (753ms)
-				TypeCache.ScanAssembly (694ms)
-			BuildScriptInfoCaches (388ms)
-			ResolveRequiredComponents (49ms)
-	FinalizeReload (2697ms)
+		AnalyzeDomain (469ms)
+			TypeCache.Refresh (325ms)
+				TypeCache.ScanAssembly (294ms)
+			BuildScriptInfoCaches (122ms)
+			ResolveRequiredComponents (12ms)
+	FinalizeReload (1244ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (2179ms)
+		SetupLoadedEditorAssemblies (1004ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (4ms)
-			SetLoadedEditorAssemblies (15ms)
-			BeforeProcessingInitializeOnLoad (410ms)
-			ProcessInitializeOnLoadAttributes (1234ms)
-			ProcessInitializeOnLoadMethodAttributes (503ms)
-			AfterProcessingInitializeOnLoad (9ms)
-			EditorAssembliesLoaded (4ms)
+			InitializePlatformSupportModulesInManaged (2ms)
+			SetLoadedEditorAssemblies (9ms)
+			BeforeProcessingInitializeOnLoad (257ms)
+			ProcessInitializeOnLoadAttributes (534ms)
+			ProcessInitializeOnLoadMethodAttributes (197ms)
+			AfterProcessingInitializeOnLoad (3ms)
+			EditorAssembliesLoaded (1ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (27ms)
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
-Refreshing native plugins compatible for Editor in 10.95 ms, found 4 plugins.
+		AwakeInstancesAfterBackupRestoration (11ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
+Refreshing native plugins compatible for Editor in 2.69 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 16 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6925 unused Assets / (3.9 MB). Loaded Objects now: 7742.
-Memory consumption went from 152.2 MB to 148.3 MB.
-Total: 32.874600 ms (FindLiveObjects: 2.030300 ms CreateObjectMapping: 2.021100 ms MarkObjects: 23.800600 ms  DeleteObjects: 4.663400 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 233695.505570 seconds.
-  path: Assets/Graphics/Tilemap/MarioCloneSpriteSheet_158.asset
-  artifactKey: Guid(7248e3118cc905a4ebd440b44cd3151d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Graphics/Tilemap/MarioCloneSpriteSheet_158.asset using Guid(7248e3118cc905a4ebd440b44cd3151d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'e25881dd5a0e516661c8e683ccbc98d2') in 0.3984041 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000045 seconds.
-  path: Assets/Graphics/Tilemap/MarioCloneSpriteSheet_151.asset
-  artifactKey: Guid(bf27c18c820f9f3428f74cbf7ddf04dc) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Graphics/Tilemap/MarioCloneSpriteSheet_151.asset using Guid(bf27c18c820f9f3428f74cbf7ddf04dc) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '391afe420ff639fec84e437400750bbe') in 0.0467242 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000050 seconds.
-  path: Assets/Graphics/Tilemap/MarioCloneSpriteSheet_130.asset
-  artifactKey: Guid(b026605d7f2cf1d429d573eaebd285e0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Graphics/Tilemap/MarioCloneSpriteSheet_130.asset using Guid(b026605d7f2cf1d429d573eaebd285e0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'fdcbbe54801ce040747281703de82388') in 0.0340109 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000032 seconds.
-  path: Assets/Graphics/Tilemap/MarioCloneSpriteSheet_132.asset
-  artifactKey: Guid(c3dca9c947742504d91cc98d985df3c6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Graphics/Tilemap/MarioCloneSpriteSheet_132.asset using Guid(c3dca9c947742504d91cc98d985df3c6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '10c8decd12d9ba0756dd9e93aa2a1835') in 0.0262535 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000027 seconds.
-  path: Assets/Graphics/Tilemap/MarioCloneSpriteSheet_148.asset
-  artifactKey: Guid(9b29edf7b30b9a843897bdb8cb4c810d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Graphics/Tilemap/MarioCloneSpriteSheet_148.asset using Guid(9b29edf7b30b9a843897bdb8cb4c810d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '64cc78bfd2786c50b8b1ddc4fbc50c34') in 0.0266212 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000033 seconds.
-  path: Assets/Graphics/Tilemap/MarioCloneSpriteSheet_149.asset
-  artifactKey: Guid(ad33f47922f77864781ad3ef1775b3b9) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Graphics/Tilemap/MarioCloneSpriteSheet_149.asset using Guid(ad33f47922f77864781ad3ef1775b3b9) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '05914c6c9695d9c49ce7ee4ac9027e26') in 0.043683 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000058 seconds.
-  path: Assets/Scripts/GameManager.cs
-  artifactKey: Guid(154b1ab4b5811e84a8d924e4b9e46350) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Scripts/GameManager.cs using Guid(154b1ab4b5811e84a8d924e4b9e46350) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '3c3fae49ea26efa821a6d56c53b9144d') in 0.0502776 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000038 seconds.
-  path: Assets/Graphics/Tilemap/MarioCloneSpriteSheet_165.asset
-  artifactKey: Guid(f7bb686ce34fe5b41a6c73833d987456) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Graphics/Tilemap/MarioCloneSpriteSheet_165.asset using Guid(f7bb686ce34fe5b41a6c73833d987456) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'f44ccab3c7cab443d03d491dcc18d765') in 0.0415334 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000078 seconds.
-  path: Assets/Graphics/Tilemap/MarioCloneSpriteSheet_175.asset
-  artifactKey: Guid(1a51af5c7aff2394c9d732e398dbfeab) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Graphics/Tilemap/MarioCloneSpriteSheet_175.asset using Guid(1a51af5c7aff2394c9d732e398dbfeab) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '1955d07977c521bc6b2080ff39ee6b0a') in 0.0362632 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000045 seconds.
-  path: Assets/Graphics/Tilemap/MarioCloneSpriteSheet_177.asset
-  artifactKey: Guid(810ce015e8317104ea9ee7cd52da6a79) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Graphics/Tilemap/MarioCloneSpriteSheet_177.asset using Guid(810ce015e8317104ea9ee7cd52da6a79) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '2f0b4ae1de894f6065d4709ed3071472') in 0.0491621 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000053 seconds.
-  path: Assets/Graphics/Tilemap/MarioCloneSpriteSheet_183.asset
-  artifactKey: Guid(c13a553d5ceec7d438b2a2dabafabca9) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Graphics/Tilemap/MarioCloneSpriteSheet_183.asset using Guid(c13a553d5ceec7d438b2a2dabafabca9) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'e9fc9349bbfea4e0b628f0d00ec1b1cd') in 0.0420938 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000038 seconds.
-  path: Assets/Prefabs/coin_sprite_0.prefab
-  artifactKey: Guid(3d9877fb954e27943977f0c001313da6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Prefabs/coin_sprite_0.prefab using Guid(3d9877fb954e27943977f0c001313da6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'b84a3be32dca63fc6b7d56ebba8a4e9c') in 0.0985319 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000051 seconds.
-  path: Assets/Graphics/Tilemap/MarioCloneSpriteSheet_137.asset
-  artifactKey: Guid(adcf9a621a75a3148b49b287522e7409) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Graphics/Tilemap/MarioCloneSpriteSheet_137.asset using Guid(adcf9a621a75a3148b49b287522e7409) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'b6ca8bb8b5167b4e5c8e1aca0e2332bc') in 0.0419878 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000026 seconds.
-  path: Assets/Graphics/Tilemap/MarioCloneSpriteSheet_193.asset
-  artifactKey: Guid(6ef54e0f1bb54bf43b86aff6016b7383) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Graphics/Tilemap/MarioCloneSpriteSheet_193.asset using Guid(6ef54e0f1bb54bf43b86aff6016b7383) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '0d680fc19f3ec0650244b6147a11d485') in 0.0351241 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000028 seconds.
-  path: Assets/Scripts/TimerController.cs
-  artifactKey: Guid(e0743e22d96141d47988315e3a2bf35c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Scripts/TimerController.cs using Guid(e0743e22d96141d47988315e3a2bf35c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '5157a57d58aa1041a35fdf7f67041409') in 0.0324 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000041 seconds.
-  path: Assets/Graphics/Tilemap/MarioCloneSpriteSheet_112.asset
-  artifactKey: Guid(79efc48562256b94ba93a309a6797db1) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Graphics/Tilemap/MarioCloneSpriteSheet_112.asset using Guid(79efc48562256b94ba93a309a6797db1) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'b51a37f5d2339db123dbf0b16dac8e9b') in 0.0342137 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000034 seconds.
-  path: Assets/Graphics/Tilemap/MarioCloneSpriteSheet_107.asset
-  artifactKey: Guid(ce422621aeca06645907ca3fbb772289) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Graphics/Tilemap/MarioCloneSpriteSheet_107.asset using Guid(ce422621aeca06645907ca3fbb772289) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'fc855bfa103141b9936e8bbd0aa6b095') in 0.0266483 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000037 seconds.
-  path: Assets/Graphics/Tilemap/MarioCloneSpriteSheet_118.asset
-  artifactKey: Guid(f1668cd5abd3d7741ac1de2ea314d111) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Graphics/Tilemap/MarioCloneSpriteSheet_118.asset using Guid(f1668cd5abd3d7741ac1de2ea314d111) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '91262334291a57ab4366fee6e2a47190') in 0.0285928 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000052 seconds.
-  path: Assets/Graphics/Tilemap/MarioCloneSpriteSheet_20.asset
-  artifactKey: Guid(0b2ac531aa3144b448d5153e42b936e5) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Graphics/Tilemap/MarioCloneSpriteSheet_20.asset using Guid(0b2ac531aa3144b448d5153e42b936e5) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '6d7281a61f8ff894aa3225b81f3bc2a5') in 0.1034931 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/Graphics/Tilemap/MarioCloneSpriteSheet_181.asset
-  artifactKey: Guid(051cda71914059c42bb157fbea0d493c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Graphics/Tilemap/MarioCloneSpriteSheet_181.asset using Guid(051cda71914059c42bb157fbea0d493c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'a1d32b49f737161440e44f4ba37540d6') in 0.0313196 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000028 seconds.
-  path: Assets/Graphics/Tilemap/MarioCloneSpriteSheet_106.asset
-  artifactKey: Guid(edc82fd21ff8e474a932b04fa074987e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Graphics/Tilemap/MarioCloneSpriteSheet_106.asset using Guid(edc82fd21ff8e474a932b04fa074987e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'af568df4565cf295212204c6dcf6084d') in 0.025652 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000068 seconds.
-  path: Assets/Graphics/Tilemap/MarioCloneSpriteSheet_164.asset
-  artifactKey: Guid(367d085b782c6a34b80df1f89373d0bc) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Graphics/Tilemap/MarioCloneSpriteSheet_164.asset using Guid(367d085b782c6a34b80df1f89373d0bc) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '9fda83d6b5e54a03c4de6a9e66da71b6') in 0.027988 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000028 seconds.
-  path: Assets/Graphics/Tilemap/MarioCloneSpriteSheet_216.asset
-  artifactKey: Guid(0d51f3bf29b06d04e9d40c10dcc60280) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Graphics/Tilemap/MarioCloneSpriteSheet_216.asset using Guid(0d51f3bf29b06d04e9d40c10dcc60280) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '6ff9fd6cc417ee8cf359a657052c15a6') in 0.0260583 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000029 seconds.
-  path: Assets/Graphics/Tilemap/MarioCloneSpriteSheet_210.asset
-  artifactKey: Guid(5d7849bb5d9173747a5b16e2247a0c50) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Graphics/Tilemap/MarioCloneSpriteSheet_210.asset using Guid(5d7849bb5d9173747a5b16e2247a0c50) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '18b7c4346d20b8c9cf841d5296b87933') in 0.0277349 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000042 seconds.
-  path: Assets/Graphics/Tilemap/MarioCloneSpriteSheet_212.asset
-  artifactKey: Guid(60c507153aa1a6744b494c226e06ad82) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Graphics/Tilemap/MarioCloneSpriteSheet_212.asset using Guid(60c507153aa1a6744b494c226e06ad82) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'ab4de5932e77fca9a9a675d69d8cc418') in 0.0480711 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000053 seconds.
-  path: Assets/Graphics/Tilemap/MarioCloneSpriteSheet_129.asset
-  artifactKey: Guid(3d62b32692cd8dc4bb5543c51e2b0056) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Graphics/Tilemap/MarioCloneSpriteSheet_129.asset using Guid(3d62b32692cd8dc4bb5543c51e2b0056) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '30ab3a0544d5c78c85f1ce46e9426e9f') in 0.0293725 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000026 seconds.
-  path: Assets/Graphics/Tilemap/MarioCloneSpriteSheet_12.asset
-  artifactKey: Guid(07eaa10caadfa2e4a80cc13e2ef4a212) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Graphics/Tilemap/MarioCloneSpriteSheet_12.asset using Guid(07eaa10caadfa2e4a80cc13e2ef4a212) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '2c1ed05775c60c589c1dada0412c6981') in 0.0332696 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000030 seconds.
-  path: Assets/Graphics/Tilemap/MarioCloneSpriteSheet_220.asset
-  artifactKey: Guid(f76380b5cdb2d6f4b89a61aac30096a3) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Graphics/Tilemap/MarioCloneSpriteSheet_220.asset using Guid(f76380b5cdb2d6f4b89a61aac30096a3) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '8d0d0a544fe6ed22c0f5c4349ca2e0bf') in 0.0287071 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000047 seconds.
-  path: Assets/Graphics/Tilemap/MarioCloneSpriteSheet_104.asset
-  artifactKey: Guid(2fc60ea7589019e4294a4227d94f6c30) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Graphics/Tilemap/MarioCloneSpriteSheet_104.asset using Guid(2fc60ea7589019e4294a4227d94f6c30) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '2dca2dbfb2b48e55a0b9e8a1d498cb97') in 0.0296358 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000028 seconds.
-  path: Assets/Graphics/Tilemap/MarioCloneSpriteSheet_14.asset
-  artifactKey: Guid(15bdd2c7a0cfa174ea23aa52e0e11725) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Graphics/Tilemap/MarioCloneSpriteSheet_14.asset using Guid(15bdd2c7a0cfa174ea23aa52e0e11725) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '7e0511670c97241299111ab9e355f3f8') in 0.0315642 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000030 seconds.
-  path: Assets/Graphics/Tilemap/MarioCloneSpriteSheet_189.asset
-  artifactKey: Guid(9557cc84618bf6e40af93524dddca24a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Graphics/Tilemap/MarioCloneSpriteSheet_189.asset using Guid(9557cc84618bf6e40af93524dddca24a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '0482e6d9a74a96d9e240a02429936b1d') in 0.0258405 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000045 seconds.
-  path: Assets/Graphics/Tilemap/MarioCloneSpriteSheet_238.asset
-  artifactKey: Guid(2e6afb3f87b0b8e4eafc0ba0491005fe) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Graphics/Tilemap/MarioCloneSpriteSheet_238.asset using Guid(2e6afb3f87b0b8e4eafc0ba0491005fe) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'a076ce1dbe3dafb029a3498b702deeeb') in 0.1054949 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000045 seconds.
-  path: Assets/Graphics/Tilemap/MarioCloneSpriteSheet_109.asset
-  artifactKey: Guid(b216d34132b10224193a88d0a95d9b00) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Graphics/Tilemap/MarioCloneSpriteSheet_109.asset using Guid(b216d34132b10224193a88d0a95d9b00) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '8d7f6b3c77fc0d8792800db7f97833ad') in 0.0527385 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000043 seconds.
-  path: Assets/Scripts/Player.cs
-  artifactKey: Guid(bb57988ac0d331843832b1fe87805f97) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Scripts/Player.cs using Guid(bb57988ac0d331843832b1fe87805f97) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '6050f1fac012fb258550b883d3da1b89') in 0.1506758 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000029 seconds.
-  path: Assets/Graphics/Tilemap/MarioCloneSpriteSheet_25.asset
-  artifactKey: Guid(94f014c24c5f7604e99c1c59b912310b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Graphics/Tilemap/MarioCloneSpriteSheet_25.asset using Guid(94f014c24c5f7604e99c1c59b912310b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '177f0a287375493681c04936dea8730b') in 0.0316172 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000053 seconds.
-  path: Assets/Graphics/Tilemap/MarioCloneSpriteSheet_161.asset
-  artifactKey: Guid(7dd78b795d6a36e42a97ea162015863d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Graphics/Tilemap/MarioCloneSpriteSheet_161.asset using Guid(7dd78b795d6a36e42a97ea162015863d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'b23de1686599fa555a153e72c646fa80') in 0.0390606 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/InputSystem_Actions.inputactions
-  artifactKey: Guid(2bcd2660ca9b64942af0de543d8d7100) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/InputSystem_Actions.inputactions using Guid(2bcd2660ca9b64942af0de543d8d7100) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '6e178efa6764150771401a6e41c80767') in 0.3780528 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 21
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000036 seconds.
-  path: Assets/DefaultVolumeProfile.asset
-  artifactKey: Guid(3f9215ea0144899419cfbc0957140d3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/DefaultVolumeProfile.asset using Guid(3f9215ea0144899419cfbc0957140d3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1e3ee85287093c2e01e2184a29fd3edf') in 0.0393492 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000036 seconds.
-  path: Assets/Scripts/BrickController.cs
-  artifactKey: Guid(95a17538b514b664d82656020398d521) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Scripts/BrickController.cs using Guid(95a17538b514b664d82656020398d521) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'c548ff9af376ddfc39e5bb77e874994b') in 0.022172 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000028 seconds.
-  path: Assets/Graphics/Tilemap/MarioCloneSpriteSheet_176.asset
-  artifactKey: Guid(29db211ef410ecf47accf8804da559b0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Graphics/Tilemap/MarioCloneSpriteSheet_176.asset using Guid(29db211ef410ecf47accf8804da559b0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '42890c0ec72360602a1e0b10443793b7') in 0.0313932 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Assets/Graphics/Tilemap/MarioCloneSpriteSheet_199.asset
-  artifactKey: Guid(f8e8d764340f66046bb139cad496fae4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Graphics/Tilemap/MarioCloneSpriteSheet_199.asset using Guid(f8e8d764340f66046bb139cad496fae4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'dc3412eed564524be4e252af94eb0134') in 0.0669507 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000029 seconds.
-  path: Assets/Graphics/Tilemap/MarioCloneSpriteSheet_267.asset
-  artifactKey: Guid(c40322f6e3739b94ab0bd7d16ccd97a6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Graphics/Tilemap/MarioCloneSpriteSheet_267.asset using Guid(c40322f6e3739b94ab0bd7d16ccd97a6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '93feb13a28e34908d51abd270561628f') in 0.0257399 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000048 seconds.
-  path: Assets/Graphics/Tilemap/MarioCloneSpriteSheet_208.asset
-  artifactKey: Guid(89957342f3bf9ac4d8b8255ce539c5ff) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Graphics/Tilemap/MarioCloneSpriteSheet_208.asset using Guid(89957342f3bf9ac4d8b8255ce539c5ff) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'c550f83f81613014c33b094c0db316ef') in 0.0244553 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000034 seconds.
-  path: Assets/Graphics/Tilemap/MarioCloneSpriteSheet_160.asset
-  artifactKey: Guid(c545be872aeabf64a97a383fe7e868e7) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Graphics/Tilemap/MarioCloneSpriteSheet_160.asset using Guid(c545be872aeabf64a97a383fe7e868e7) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '6de552b11df4abc69082b541de7a61e2') in 0.025388 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000027 seconds.
-  path: Assets/Scripts/PlayerController.cs
-  artifactKey: Guid(46ef09d2c0f30c542a9cdb65b58dc1bf) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Scripts/PlayerController.cs using Guid(46ef09d2c0f30c542a9cdb65b58dc1bf) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '717b2c1f9c1eb4f7d260e838558c0382') in 0.0213724 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000042 seconds.
-  path: Assets/Graphics/Tilemap/MarioCloneSpriteSheet_263.asset
-  artifactKey: Guid(714799807dd1eb34494b3cd20a766fd3) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Graphics/Tilemap/MarioCloneSpriteSheet_263.asset using Guid(714799807dd1eb34494b3cd20a766fd3) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'ad0c883f557996693b9a18406040fb5a') in 0.0287657 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000042 seconds.
-  path: Assets/Graphics/Tilemap/MarioCloneSpriteSheet_279.asset
-  artifactKey: Guid(9a551623a953fb0428b9b4045e517a71) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Graphics/Tilemap/MarioCloneSpriteSheet_279.asset using Guid(9a551623a953fb0428b9b4045e517a71) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'ac25dda04570f42051c5448041ad33e6') in 0.0376539 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000026 seconds.
-  path: Assets/Graphics/Tilemap/MarioCloneSpriteSheet_281.asset
-  artifactKey: Guid(ee5c7730d570a1840964a4065af44e09) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Graphics/Tilemap/MarioCloneSpriteSheet_281.asset using Guid(ee5c7730d570a1840964a4065af44e09) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'fe578e6791536f5b6570784c9932370e') in 0.0348441 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000026 seconds.
-  path: Assets/Graphics/Tilemap/MarioCloneSpriteSheet_278.asset
-  artifactKey: Guid(a50ac41768009f14f97f27ca562b088b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Graphics/Tilemap/MarioCloneSpriteSheet_278.asset using Guid(a50ac41768009f14f97f27ca562b088b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '0880169f88d5e94f5ef0899d5c410eb3') in 0.0368262 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000030 seconds.
-  path: Assets/Graphics/Tilemap/MarioCloneSpriteSheet_28.asset
-  artifactKey: Guid(b88b2d621ec989b47ae88e54c098bff6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Graphics/Tilemap/MarioCloneSpriteSheet_28.asset using Guid(b88b2d621ec989b47ae88e54c098bff6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'e078c4e8017130bff39803ca69aebcb4') in 0.0357179 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000043 seconds.
-  path: Assets/Graphics/Tilemap/MarioCloneSpriteSheet_294.asset
-  artifactKey: Guid(7ed31e6aaa7af2a4facfa57de5e898c2) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Graphics/Tilemap/MarioCloneSpriteSheet_294.asset using Guid(7ed31e6aaa7af2a4facfa57de5e898c2) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '8b14d34ee6a70e77163eac529649f0dc') in 0.0295863 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000026 seconds.
-  path: Assets/Graphics/Tilemap/MarioCloneSpriteSheet_293.asset
-  artifactKey: Guid(7dd4da79621a55341b3043baa2852ebf) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Graphics/Tilemap/MarioCloneSpriteSheet_293.asset using Guid(7dd4da79621a55341b3043baa2852ebf) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'daf220a0b9443194e586f984eac53552') in 0.0264812 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000037 seconds.
-  path: Assets/Graphics/Tilemap/MarioCloneSpriteSheet_3.asset
-  artifactKey: Guid(9686ee21563911d498d8f55593c0ea43) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Graphics/Tilemap/MarioCloneSpriteSheet_3.asset using Guid(9686ee21563911d498d8f55593c0ea43) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '7c7af549da0d3cfffa8d938a28550f00') in 0.0240546 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000041 seconds.
-  path: Assets/Graphics/Tilemap/MarioCloneSpriteSheet_273.asset
-  artifactKey: Guid(03724dfcb23aa474c84ad1b5790b44a9) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Graphics/Tilemap/MarioCloneSpriteSheet_273.asset using Guid(03724dfcb23aa474c84ad1b5790b44a9) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '5ff433e895d7a11b4fc440aba9d4db96') in 0.0294653 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000049 seconds.
-  path: Assets/Graphics/Tilemap/MarioCloneSpriteSheet_254.asset
-  artifactKey: Guid(cb5819cd8231e654e91664236b1f3020) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Graphics/Tilemap/MarioCloneSpriteSheet_254.asset using Guid(cb5819cd8231e654e91664236b1f3020) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'becbb7ba7f169d3ee72b4baf24f4c6ef') in 0.0315256 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000027 seconds.
-  path: Assets/Graphics/Tilemap/MarioCloneSpriteSheet_256.asset
-  artifactKey: Guid(8ac63d4d3c5e37f4f9b654c52623eb84) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Graphics/Tilemap/MarioCloneSpriteSheet_256.asset using Guid(8ac63d4d3c5e37f4f9b654c52623eb84) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '3aaff81f948ee01c8747058aa650165d') in 0.02513 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000027 seconds.
-  path: Assets/Graphics/Tilemap/MarioCloneSpriteSheet_315.asset
-  artifactKey: Guid(d8f1ffa79813d0742ade6f3ef9469767) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Graphics/Tilemap/MarioCloneSpriteSheet_315.asset using Guid(d8f1ffa79813d0742ade6f3ef9469767) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '259e144d068e0bd363f64bfbc8cce108') in 0.0271864 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000040 seconds.
-  path: Assets/Graphics/Tilemap/MarioCloneSpriteSheet_307.asset
-  artifactKey: Guid(6f4416aff0c344146b713753e348e940) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Graphics/Tilemap/MarioCloneSpriteSheet_307.asset using Guid(6f4416aff0c344146b713753e348e940) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '7cc225384897f44381675a360aa93078') in 0.0317576 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000048 seconds.
-  path: Assets/Graphics/Tilemap/MarioCloneSpriteSheet_306.asset
-  artifactKey: Guid(1e32f9f84e34a8d46ba3447c8bd61ad6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Graphics/Tilemap/MarioCloneSpriteSheet_306.asset using Guid(1e32f9f84e34a8d46ba3447c8bd61ad6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'f743587459948ef6e2ceae9bf9237154') in 0.0315406 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000052 seconds.
-  path: Assets/Graphics/Tilemap/MarioCloneSpriteSheet_225.asset
-  artifactKey: Guid(9b97eff693129fe4e95d7056c44d0037) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Graphics/Tilemap/MarioCloneSpriteSheet_225.asset using Guid(9b97eff693129fe4e95d7056c44d0037) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '5a242ab0522f14eb9629a1f592cd5614') in 0.0578736 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000035 seconds.
-  path: Assets/Graphics/Tilemap/MarioCloneSpriteSheet_268.asset
-  artifactKey: Guid(bebbacecb9af65b419b5af42ef45de42) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Graphics/Tilemap/MarioCloneSpriteSheet_268.asset using Guid(bebbacecb9af65b419b5af42ef45de42) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '70a1a640fcf67bcb1d21a00c510e38d3') in 0.0897093 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000054 seconds.
-  path: Assets/Graphics/Tilemap/MarioCloneSpriteSheet_327.asset
-  artifactKey: Guid(3d8d6b6851837b64a997771a4a4c2894) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Graphics/Tilemap/MarioCloneSpriteSheet_327.asset using Guid(3d8d6b6851837b64a997771a4a4c2894) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'e8f5410f714d358d35c2dd3d206c63ae') in 0.0312537 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000027 seconds.
-  path: Assets/Graphics/Tilemap/MarioCloneSpriteSheet_320.asset
-  artifactKey: Guid(1e2163d8c5d33e746bd06d25d7f6bc3e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Graphics/Tilemap/MarioCloneSpriteSheet_320.asset using Guid(1e2163d8c5d33e746bd06d25d7f6bc3e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '5368486e95494a7c9f0578edc9c5e113') in 0.0297054 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000029 seconds.
-  path: Assets/Graphics/Tilemap/MarioCloneSpriteSheet_231.asset
-  artifactKey: Guid(c0cd592f618204341b7670568e33a7e9) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Graphics/Tilemap/MarioCloneSpriteSheet_231.asset using Guid(c0cd592f618204341b7670568e33a7e9) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'bca80db2535f76d0a0b39ed64c10bc8c') in 0.0339602 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000041 seconds.
-  path: Assets/Graphics/Tilemap/MarioCloneSpriteSheet_297.asset
-  artifactKey: Guid(46591c5b610ab0940b9cfa9468db3a4d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Graphics/Tilemap/MarioCloneSpriteSheet_297.asset using Guid(46591c5b610ab0940b9cfa9468db3a4d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'e68d0a0116119f1b0479ffd2284ea4e1') in 0.0924376 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000033 seconds.
-  path: Assets/Graphics/Tilemap/MarioCloneSpriteSheet_330.asset
-  artifactKey: Guid(566eee8627dc8c84db3d085e90ff0772) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Graphics/Tilemap/MarioCloneSpriteSheet_330.asset using Guid(566eee8627dc8c84db3d085e90ff0772) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'c73cc05c98f8be81b747999b423f8f8f') in 0.0300226 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000045 seconds.
-  path: Assets/Graphics/Tilemap/MarioCloneSpriteSheet_331.asset
-  artifactKey: Guid(a1f072389fbaf22439eec4320ad83449) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Graphics/Tilemap/MarioCloneSpriteSheet_331.asset using Guid(a1f072389fbaf22439eec4320ad83449) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '377ad89e9d989f9a74647b93c1cd5d83') in 0.0447935 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000046 seconds.
-  path: Assets/Graphics/Tilemap/MarioCloneSpriteSheet_328.asset
-  artifactKey: Guid(406def7ec109af443bb3e84e0ed6eae2) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Graphics/Tilemap/MarioCloneSpriteSheet_328.asset using Guid(406def7ec109af443bb3e84e0ed6eae2) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '09c234568ec2f4f4bc9c620b9b4d5d81') in 0.0404071 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/Graphics/Tilemap/MarioCloneSpriteSheet_346.asset
-  artifactKey: Guid(b3268579c2f015040bbf5a4aa20e82a7) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Graphics/Tilemap/MarioCloneSpriteSheet_346.asset using Guid(b3268579c2f015040bbf5a4aa20e82a7) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '1dc90a236619ad0c2e1684e9e64fc5b0') in 0.0269587 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000032 seconds.
-  path: Assets/Graphics/Tilemap/MarioCloneSpriteSheet_34.asset
-  artifactKey: Guid(6de63ff2f6fa1f6439d2f857f597d0db) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Graphics/Tilemap/MarioCloneSpriteSheet_34.asset using Guid(6de63ff2f6fa1f6439d2f857f597d0db) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '2c460f1f22f6b4e6d407d064ff5d4be6') in 0.0332368 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000053 seconds.
-  path: Assets/Graphics/Tilemap/MarioCloneSpriteSheet_345.asset
-  artifactKey: Guid(b36ae55b064c173479d7dadfe89d0c96) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Graphics/Tilemap/MarioCloneSpriteSheet_345.asset using Guid(b36ae55b064c173479d7dadfe89d0c96) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'f5ceb9d56fb7268ded4f237bcfc309e4') in 0.0457692 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000028 seconds.
-  path: Assets/Graphics/Tilemap/MarioCloneSpriteSheet_224.asset
-  artifactKey: Guid(dbb15b28df55304458eb8c816ca4914f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Graphics/Tilemap/MarioCloneSpriteSheet_224.asset using Guid(dbb15b28df55304458eb8c816ca4914f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'e20e1372f53fd191f64776ac8496dc9d') in 0.0299325 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000033 seconds.
-  path: Assets/Graphics/Tilemap/MarioCloneSpriteSheet_246.asset
-  artifactKey: Guid(ae3c362baec0da14dae9f895027b65f0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Graphics/Tilemap/MarioCloneSpriteSheet_246.asset using Guid(ae3c362baec0da14dae9f895027b65f0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'b44051c28b779e818a91dba802c9f93e') in 0.0381537 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000045 seconds.
-  path: Assets/Graphics/Tilemap/MarioCloneSpriteSheet_358.asset
-  artifactKey: Guid(a692ac71f2158984aa22ddb7d9d10000) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Graphics/Tilemap/MarioCloneSpriteSheet_358.asset using Guid(a692ac71f2158984aa22ddb7d9d10000) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'da721c4ce9ec5a5c96e4860eeab6388e') in 0.0356017 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000031 seconds.
-  path: Assets/Graphics/Tilemap/MarioCloneSpriteSheet_353.asset
-  artifactKey: Guid(8c6a8bbece7386a4795149c4b5439f0b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Graphics/Tilemap/MarioCloneSpriteSheet_353.asset using Guid(8c6a8bbece7386a4795149c4b5439f0b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '1805159e635f3a293f395eaaa21ea235') in 0.0252679 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000038 seconds.
-  path: Assets/Graphics/Tilemap/MarioCloneSpriteSheet_348.asset
-  artifactKey: Guid(481e8d2abf5f22a44a9567fb4e52acab) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Graphics/Tilemap/MarioCloneSpriteSheet_348.asset using Guid(481e8d2abf5f22a44a9567fb4e52acab) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'a06ff948598c6b9fba9ab642ba239e3e') in 0.0274249 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000233 seconds.
-  path: Assets/Graphics/Tilemap/MarioCloneSpriteSheet_298.asset
-  artifactKey: Guid(14dd081dc86598a429498de844083c46) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Graphics/Tilemap/MarioCloneSpriteSheet_298.asset using Guid(14dd081dc86598a429498de844083c46) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'e4f00cc932b2457857035eb4c40e3d3a') in 0.0293193 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000029 seconds.
-  path: Assets/Graphics/Tilemap/MarioCloneSpriteSheet_347.asset
-  artifactKey: Guid(f2f65cdccf9c0af4496d0a2eb879fbfd) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Graphics/Tilemap/MarioCloneSpriteSheet_347.asset using Guid(f2f65cdccf9c0af4496d0a2eb879fbfd) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '20ec4d0c2145065507a33491b65fa2e5') in 0.0251048 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000032 seconds.
-  path: Assets/Graphics/Tilemap/MarioCloneSpriteSheet_363.asset
-  artifactKey: Guid(4ac295b7519a5b744a69692c491fccab) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Graphics/Tilemap/MarioCloneSpriteSheet_363.asset using Guid(4ac295b7519a5b744a69692c491fccab) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'ab414d1a3f405a15033961c468b57309') in 0.0259602 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000074 seconds.
-  path: Assets/Graphics/Tilemap/MarioCloneSpriteSheet_37.asset
-  artifactKey: Guid(9aac908e52cd38447a37e5832f501ac2) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Graphics/Tilemap/MarioCloneSpriteSheet_37.asset using Guid(9aac908e52cd38447a37e5832f501ac2) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'df4d6045f15fa2a2ebd5de6f794d6cc8') in 0.0325705 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/Graphics/Tilemap/MarioCloneSpriteSheet_362.asset
-  artifactKey: Guid(9a990b53a244c30498ca7ea629dd8685) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Graphics/Tilemap/MarioCloneSpriteSheet_362.asset using Guid(9a990b53a244c30498ca7ea629dd8685) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '6559ae05cb5211e13994b0e8c4f40000') in 0.0322851 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000039 seconds.
-  path: Assets/Graphics/Tilemap/MarioCloneSpriteSheet_372.asset
-  artifactKey: Guid(00593b33c6b03eb41b24490f9cdc218b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Graphics/Tilemap/MarioCloneSpriteSheet_372.asset using Guid(00593b33c6b03eb41b24490f9cdc218b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'ab956fcd19ded0d509bd5c37ee0d878d') in 0.0255485 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000041 seconds.
-  path: Assets/Graphics/Tilemap/MarioCloneSpriteSheet_375.asset
-  artifactKey: Guid(ee446d0cff518df4cbd2e251cf7921b6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Graphics/Tilemap/MarioCloneSpriteSheet_375.asset using Guid(ee446d0cff518df4cbd2e251cf7921b6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '28a5b66b8df20b257d3f2fa4d00b0779') in 0.0261327 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000037 seconds.
-  path: Assets/Graphics/Tilemap/MarioCloneSpriteSheet_376.asset
-  artifactKey: Guid(434d545c8d1222e4daa2efdb438d5c98) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Graphics/Tilemap/MarioCloneSpriteSheet_376.asset using Guid(434d545c8d1222e4daa2efdb438d5c98) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '71afcd1eedfed6791b3bfaefe9eed905') in 0.0282426 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000034 seconds.
-  path: Assets/Graphics/Tilemap/MarioCloneSpriteSheet_350.asset
-  artifactKey: Guid(0ee4e66f31db9244e9103e4c2a1fbc83) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Graphics/Tilemap/MarioCloneSpriteSheet_350.asset using Guid(0ee4e66f31db9244e9103e4c2a1fbc83) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'c408b3237c4cdd22140fc729d47b0ebe') in 0.0261488 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000029 seconds.
-  path: Assets/Graphics/Tilemap/MarioCloneSpriteSheet_361.asset
-  artifactKey: Guid(8acc7b9232ba2814ca7773c3ad3db153) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Graphics/Tilemap/MarioCloneSpriteSheet_361.asset using Guid(8acc7b9232ba2814ca7773c3ad3db153) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'f409694a421ecb35dae74fe937503ccd') in 0.0265554 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000061 seconds.
-  path: Assets/Graphics/Tilemap/MarioCloneSpriteSheet_142.asset
-  artifactKey: Guid(9f7639e6c615f34439b0cacd218bf257) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Graphics/Tilemap/MarioCloneSpriteSheet_142.asset using Guid(9f7639e6c615f34439b0cacd218bf257) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'e0debb1a63c39afdb2bf3c2068964804') in 0.0270961 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000070 seconds.
-  path: Assets/Graphics/Tilemap/MarioCloneSpriteSheet_394.asset
-  artifactKey: Guid(44c7ce6f6bb6ab3488cd7e148bec1700) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Graphics/Tilemap/MarioCloneSpriteSheet_394.asset using Guid(44c7ce6f6bb6ab3488cd7e148bec1700) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '3e71bfd5c6d65633dbcd5e50ca4e1a84') in 0.0309763 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/Graphics/Tilemap/MarioCloneSpriteSheet_386.asset
-  artifactKey: Guid(f932a2ac76afa7a44ae5c086d2fbb450) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Graphics/Tilemap/MarioCloneSpriteSheet_386.asset using Guid(f932a2ac76afa7a44ae5c086d2fbb450) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '13dd161320f14ca805d031f193a41f59') in 0.0318917 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000038 seconds.
-  path: Assets/Graphics/Tilemap/MarioCloneSpriteSheet_392.asset
-  artifactKey: Guid(4c7b57bba2e58124fa95d8fd34135107) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Graphics/Tilemap/MarioCloneSpriteSheet_392.asset using Guid(4c7b57bba2e58124fa95d8fd34135107) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '47f0372101d23cfc8a40b0f12022e78e') in 0.0378713 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000033 seconds.
-  path: Assets/Graphics/Tilemap/MarioCloneSpriteSheet_152.asset
-  artifactKey: Guid(518a19c10b7ba064a9eb946c98859b6c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Graphics/Tilemap/MarioCloneSpriteSheet_152.asset using Guid(518a19c10b7ba064a9eb946c98859b6c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'c994987ba4168299e16893144c253577') in 0.0315299 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000046 seconds.
-  path: Assets/Graphics/Tilemap/MarioCloneSpriteSheet_408.asset
-  artifactKey: Guid(9d9c8d7350d5a8448a6dcc009a7ed933) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Graphics/Tilemap/MarioCloneSpriteSheet_408.asset using Guid(9d9c8d7350d5a8448a6dcc009a7ed933) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '9c5971496c8350e29a6d4e9893cf592e') in 0.0290604 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000048 seconds.
-  path: Assets/Graphics/Tilemap/MarioCloneSpriteSheet_405.asset
-  artifactKey: Guid(6b1224d87eeb26f4b896de48fff66f08) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Graphics/Tilemap/MarioCloneSpriteSheet_405.asset using Guid(6b1224d87eeb26f4b896de48fff66f08) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '55444bd7f2f2d3dc01ee43c4bd1ec47a') in 0.0359325 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/Graphics/Tilemap/MarioCloneSpriteSheet_40.asset
-  artifactKey: Guid(ab217b8e0dc66da458d6016f3084d3ed) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Graphics/Tilemap/MarioCloneSpriteSheet_40.asset using Guid(ab217b8e0dc66da458d6016f3084d3ed) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'd23fc11496bebce62aaeb7fec8fd1c65') in 0.0297351 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000061 seconds.
-  path: Assets/Graphics/Tilemap/MarioCloneSpriteSheet_409.asset
-  artifactKey: Guid(b1674ca5ab32805459fd0ddc42e78d2c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Graphics/Tilemap/MarioCloneSpriteSheet_409.asset using Guid(b1674ca5ab32805459fd0ddc42e78d2c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'c58c7ffe214ad5381533464d15f1fc4e') in 0.0251205 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000046 seconds.
-  path: Assets/Graphics/Tilemap/MarioCloneSpriteSheet_402.asset
-  artifactKey: Guid(456c143160a643b43a14e94e82ca26f1) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Graphics/Tilemap/MarioCloneSpriteSheet_402.asset using Guid(456c143160a643b43a14e94e82ca26f1) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '824edb6b37081fc23a45e8ced9cf1ac8') in 0.0261003 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Assets/Graphics/Tilemap/MarioCloneSpriteSheet_416.asset
-  artifactKey: Guid(f056607c054848e4caa58d1e3a491f16) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Graphics/Tilemap/MarioCloneSpriteSheet_416.asset using Guid(f056607c054848e4caa58d1e3a491f16) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '5cfb83a0232a8d5e96065a7351058845') in 0.0522134 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000036 seconds.
-  path: Assets/Graphics/Tilemap/MarioCloneSpriteSheet_414.asset
-  artifactKey: Guid(b77d374e9e7cc234f9669767b8ffab87) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Graphics/Tilemap/MarioCloneSpriteSheet_414.asset using Guid(b77d374e9e7cc234f9669767b8ffab87) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '7bc604bfb8363ec764f35324d08b0fa6') in 0.0477722 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000040 seconds.
-  path: Assets/Graphics/Tilemap/MarioCloneSpriteSheet_420.asset
-  artifactKey: Guid(a266cd66f6ce51a46a74efba510977b3) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Graphics/Tilemap/MarioCloneSpriteSheet_420.asset using Guid(a266cd66f6ce51a46a74efba510977b3) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '4cf7976fe4198ef61ccb28c7efe094b3') in 0.0344848 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Assets/Graphics/Tilemap/MarioCloneSpriteSheet_410.asset
-  artifactKey: Guid(fb55f948f1c6668438fea5177dcd97a0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Graphics/Tilemap/MarioCloneSpriteSheet_410.asset using Guid(fb55f948f1c6668438fea5177dcd97a0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'a583a7382d3eb035d9d7276cb8f27f11') in 0.0256236 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000027 seconds.
-  path: Assets/Graphics/Tilemap/MarioCloneSpriteSheet_424.asset
-  artifactKey: Guid(0c9caa7900f15db45bef088cd22f8a0c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Graphics/Tilemap/MarioCloneSpriteSheet_424.asset using Guid(0c9caa7900f15db45bef088cd22f8a0c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'c298551ce30b656179617d4e920dcbfc') in 0.0260023 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000082 seconds.
-  path: Assets/Graphics/Tilemap/MarioCloneSpriteSheet_433.asset
-  artifactKey: Guid(9b4be1488aa6a494788fd9f7a87d5295) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Graphics/Tilemap/MarioCloneSpriteSheet_433.asset using Guid(9b4be1488aa6a494788fd9f7a87d5295) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '091256ec282dd4f26fc6374c819bb22f') in 0.0288579 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/Graphics/Tilemap/MarioCloneSpriteSheet_423.asset
-  artifactKey: Guid(b7d6b01a0a8fa8845b95d5a4fdf00c04) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Graphics/Tilemap/MarioCloneSpriteSheet_423.asset using Guid(b7d6b01a0a8fa8845b95d5a4fdf00c04) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '695161bef9a1c453c378469b570d5205') in 0.0268563 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000027 seconds.
-  path: Assets/Graphics/Tilemap/MarioCloneSpriteSheet_431.asset
-  artifactKey: Guid(81ac6ddd6d8d5984886a2690f5c08573) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Graphics/Tilemap/MarioCloneSpriteSheet_431.asset using Guid(81ac6ddd6d8d5984886a2690f5c08573) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '91b02557586a57e028ca6db9579504a1') in 0.027598 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000031 seconds.
-  path: Assets/Graphics/Tilemap/MarioCloneSpriteSheet_209.asset
-  artifactKey: Guid(d311ecc46d27b9c438cad66500732357) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Graphics/Tilemap/MarioCloneSpriteSheet_209.asset using Guid(d311ecc46d27b9c438cad66500732357) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '4ece8dff38c7fe45c1598ba1bd225f3d') in 0.030834 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000043 seconds.
-  path: Assets/Graphics/Tilemap/MarioCloneSpriteSheet_439.asset
-  artifactKey: Guid(f1f243a6337d0a34f9ad0ec75d898ff0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Graphics/Tilemap/MarioCloneSpriteSheet_439.asset using Guid(f1f243a6337d0a34f9ad0ec75d898ff0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '34c81a5e9ef9c9f86170a9b748ae59f9') in 0.0249489 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000034 seconds.
-  path: Assets/Graphics/Tilemap/MarioCloneSpriteSheet_441.asset
-  artifactKey: Guid(5e94712493b8f3148953acbc4888aa77) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Graphics/Tilemap/MarioCloneSpriteSheet_441.asset using Guid(5e94712493b8f3148953acbc4888aa77) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '24b4d968d4d4f1b4579c1a633d3badf0') in 0.0283794 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000033 seconds.
-  path: Assets/Graphics/Tilemap/MarioCloneSpriteSheet_442.asset
-  artifactKey: Guid(b68cc54db55a36d488c78122b1b030cf) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Graphics/Tilemap/MarioCloneSpriteSheet_442.asset using Guid(b68cc54db55a36d488c78122b1b030cf) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'bdee5bf1528191fb95b2faeed24dcd7a') in 0.0263478 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000029 seconds.
-  path: Assets/Graphics/Tilemap/MarioCloneSpriteSheet_440.asset
-  artifactKey: Guid(e4cc5ae8108fc0a4080d0c46e667e37a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Graphics/Tilemap/MarioCloneSpriteSheet_440.asset using Guid(e4cc5ae8108fc0a4080d0c46e667e37a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '718725765946756098d2f1917ee01e4b') in 0.0249253 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000078 seconds.
-  path: Assets/Graphics/Tilemap/MarioCloneSpriteSheet_258.asset
-  artifactKey: Guid(32949ac159224fd40892b6d5affc3004) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Graphics/Tilemap/MarioCloneSpriteSheet_258.asset using Guid(32949ac159224fd40892b6d5affc3004) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '45513cab31c084efc5cf0e6a9d0d6119') in 0.0375824 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000028 seconds.
-  path: Assets/Graphics/Tilemap/MarioCloneSpriteSheet_52.asset
-  artifactKey: Guid(48ac8630726e6e94888dadd8590f4cd9) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Graphics/Tilemap/MarioCloneSpriteSheet_52.asset using Guid(48ac8630726e6e94888dadd8590f4cd9) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '979a6fcd1cfc401c83a1d5d46ee2856f') in 0.0261406 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000028 seconds.
-  path: Assets/Graphics/Tilemap/MarioCloneSpriteSheet_5.asset
-  artifactKey: Guid(c96ddda5422217b468199b179f6ff0cd) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Graphics/Tilemap/MarioCloneSpriteSheet_5.asset using Guid(c96ddda5422217b468199b179f6ff0cd) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '0020b23e61a943b97a2f5f014e7476ef') in 0.0270623 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000027 seconds.
-  path: Assets/Graphics/Tilemap/MarioCloneSpriteSheet_449.asset
-  artifactKey: Guid(2ab9ad39cb95483498f3fa658c7d72cb) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Graphics/Tilemap/MarioCloneSpriteSheet_449.asset using Guid(2ab9ad39cb95483498f3fa658c7d72cb) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'db801c48480b3bbbcaaee177281655ff') in 0.0278691 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000037 seconds.
-  path: Assets/Graphics/Tilemap/MarioCloneSpriteSheet_51.asset
-  artifactKey: Guid(73bc39ed880c4bf47aa25a26845c3b17) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Graphics/Tilemap/MarioCloneSpriteSheet_51.asset using Guid(73bc39ed880c4bf47aa25a26845c3b17) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'fb8aaa72a5ea40c937b6e26770e90c6d') in 0.0259524 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000029 seconds.
-  path: Assets/Graphics/Tilemap/MarioCloneSpriteSheet_50.asset
-  artifactKey: Guid(e994e377866153f4a985726cb1f3198b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Graphics/Tilemap/MarioCloneSpriteSheet_50.asset using Guid(e994e377866153f4a985726cb1f3198b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '03dd4d45ce0f11c1ad4e63ea555d8d35') in 0.0238507 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000050 seconds.
-  path: Assets/Graphics/Tilemap/MarioCloneSpriteSheet_237.asset
-  artifactKey: Guid(7722013943b2804468f3905788a8b6e5) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Graphics/Tilemap/MarioCloneSpriteSheet_237.asset using Guid(7722013943b2804468f3905788a8b6e5) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '20d81dc1b8520d88e534da59f61fa406') in 0.0237751 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000035 seconds.
-  path: Assets/Graphics/Tilemap/MarioCloneSpriteSheet_61.asset
-  artifactKey: Guid(2886877617ec38942a6ebd4393d0551f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Graphics/Tilemap/MarioCloneSpriteSheet_61.asset using Guid(2886877617ec38942a6ebd4393d0551f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '552c657a06ce00639e1c71d91354a371') in 0.0275633 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000037 seconds.
-  path: Assets/Graphics/Tilemap/MarioCloneSpriteSheet_58.asset
-  artifactKey: Guid(898b2b7a3d0997f4b8e04bdd40f18ca1) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Graphics/Tilemap/MarioCloneSpriteSheet_58.asset using Guid(898b2b7a3d0997f4b8e04bdd40f18ca1) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'c6f16a3fd3273280fb0e953ec8fdde5d') in 0.0293189 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000026 seconds.
-  path: Assets/Graphics/Tilemap/MarioCloneSpriteSheet_66.asset
-  artifactKey: Guid(86f8ecd07c182284c9d00508feef2f64) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Graphics/Tilemap/MarioCloneSpriteSheet_66.asset using Guid(86f8ecd07c182284c9d00508feef2f64) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '034ac312d8bb411b44f7fde3c6d924c2') in 0.0406199 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000028 seconds.
-  path: Assets/Graphics/Tilemap/MarioCloneSpriteSheet_59.asset
-  artifactKey: Guid(af3b7095c56c4a047bd2e09e62c79fcd) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Graphics/Tilemap/MarioCloneSpriteSheet_59.asset using Guid(af3b7095c56c4a047bd2e09e62c79fcd) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '82fd57e105478fcbff35ccd821a5ce1b') in 0.0306783 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000093 seconds.
-  path: Assets/Graphics/Tilemap/MarioCloneSpriteSheet_64.asset
-  artifactKey: Guid(6e6733e1734eca5439e07ea13ba7a353) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Graphics/Tilemap/MarioCloneSpriteSheet_64.asset using Guid(6e6733e1734eca5439e07ea13ba7a353) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '78ca7e95cc8edfa9690f1a857373a1bf') in 0.0238293 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/Graphics/Tilemap/MarioCloneSpriteSheet_77.asset
-  artifactKey: Guid(f9c1d03e013d93b4eada46850b2f6884) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Graphics/Tilemap/MarioCloneSpriteSheet_77.asset using Guid(f9c1d03e013d93b4eada46850b2f6884) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '19f64b12e27759c3bd14fe075eb4834b') in 0.0286581 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/Graphics/Tilemap/MarioCloneSpriteSheet_74.asset
-  artifactKey: Guid(5cec2ea77c12ddf44b7a2a4b83afaecd) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Graphics/Tilemap/MarioCloneSpriteSheet_74.asset using Guid(5cec2ea77c12ddf44b7a2a4b83afaecd) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '9db743646288ae34bc6ba8cb3aa6b6ce') in 0.0229832 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000028 seconds.
-  path: Assets/Graphics/Tilemap/MarioCloneSpriteSheet_73.asset
-  artifactKey: Guid(12f185c229cd3b34489337f620d796b4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Graphics/Tilemap/MarioCloneSpriteSheet_73.asset using Guid(12f185c229cd3b34489337f620d796b4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'b4423c29ff1e4d65c67a994826b09501') in 0.0271756 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000042 seconds.
-  path: Assets/Graphics/Tilemap/MarioCloneSpriteSheet_80.asset
-  artifactKey: Guid(db256898e47b26f469ac2c3dacbcfa49) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Graphics/Tilemap/MarioCloneSpriteSheet_80.asset using Guid(db256898e47b26f469ac2c3dacbcfa49) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'd14040018ff9078b2813bc7b3d991fc5') in 0.0269563 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000035 seconds.
-  path: Assets/Graphics/Tilemap/MarioCloneSpriteSheet_72.asset
-  artifactKey: Guid(e12344bbe66c2db45b12b55f76f0a7ac) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Graphics/Tilemap/MarioCloneSpriteSheet_72.asset using Guid(e12344bbe66c2db45b12b55f76f0a7ac) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '81efaeb5f9f595ba9b5622d1ed7000ad') in 0.0285139 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000039 seconds.
-  path: Assets/Graphics/Tilemap/MarioCloneSpriteSheet_86.asset
-  artifactKey: Guid(6cc9bb7540dcb354489890a723112110) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Graphics/Tilemap/MarioCloneSpriteSheet_86.asset using Guid(6cc9bb7540dcb354489890a723112110) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '65c492fa5eab1f982ccc50620cfceb01') in 0.0270139 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000044 seconds.
-  path: Assets/Graphics/Tilemap/MarioCloneSpriteSheet_97.asset
-  artifactKey: Guid(a0232bfe2f41d73478ed12ad85e4f42c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Graphics/Tilemap/MarioCloneSpriteSheet_97.asset using Guid(a0232bfe2f41d73478ed12ad85e4f42c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'f2ae24a8e0320898239630eea7d09a54') in 0.1361688 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000030 seconds.
-  path: Assets/Graphics/Tilemap/MarioCloneSpriteSheet_92.asset
-  artifactKey: Guid(76f1203d81488784ab00180844f39f94) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Graphics/Tilemap/MarioCloneSpriteSheet_92.asset using Guid(76f1203d81488784ab00180844f39f94) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '6b578dbb8a7a1f362580df9e74495a63') in 0.0461612 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000034 seconds.
-  path: Assets/Graphics/Tilemap/MarioCloneSpriteSheet_90.asset
-  artifactKey: Guid(f887bef05e90a4d4cb1aa50a69f85c86) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Graphics/Tilemap/MarioCloneSpriteSheet_90.asset using Guid(f887bef05e90a4d4cb1aa50a69f85c86) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '376b922ba50b6fd573f3a79fe69b4d8a') in 0.0376339 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000061 seconds.
-  path: Assets/Scripts/PowerUpScripts/PowerState.cs
-  artifactKey: Guid(b5b42ec81ec1c204ca6599fa63a3a6c0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Scripts/PowerUpScripts/PowerState.cs using Guid(b5b42ec81ec1c204ca6599fa63a3a6c0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'da6828c4e1321ef080b6a4bf6164ed52') in 0.0270548 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Assets/Scripts/PowerUpScripts/PowerManager.cs
-  artifactKey: Guid(3fe38ffbac0875749b37dd68b944e340) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Scripts/PowerUpScripts/PowerManager.cs using Guid(3fe38ffbac0875749b37dd68b944e340) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'f714969075b16d6b4a939a26b85e6d00') in 0.0208734 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000028 seconds.
-  path: Assets/Prefabs/Terrain/Brick.prefab
-  artifactKey: Guid(075bf2931c97a8f459bba7817e498f55) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Prefabs/Terrain/Brick.prefab using Guid(075bf2931c97a8f459bba7817e498f55) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '094f9276ff577a36540fd69e22c02c4d') in 0.0967738 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 13
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000031 seconds.
-  path: Assets/Graphics/Tilemap/MarioCloneSpriteSheet_96.asset
-  artifactKey: Guid(91242f28d5479784a9ade9c79ee140af) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Graphics/Tilemap/MarioCloneSpriteSheet_96.asset using Guid(91242f28d5479784a9ade9c79ee140af) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '6298f523a14cc52594c90cc3d96b23c9') in 0.0331416 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000037 seconds.
-  path: Assets/Graphics/Tilemap/MarioCloneSpriteSheet_357.asset
-  artifactKey: Guid(e6914a57d92838148b5ed9c88c9dff90) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Graphics/Tilemap/MarioCloneSpriteSheet_357.asset using Guid(e6914a57d92838148b5ed9c88c9dff90) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '01e6c0b87d431c478ef76945dc0a7f0e') in 0.0319771 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000047 seconds.
-  path: Assets/Graphics/Tilemap/MarioCloneSpriteSheet_138.asset
-  artifactKey: Guid(68a52f5bba9df044d81e39e2bf500ca6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Graphics/Tilemap/MarioCloneSpriteSheet_138.asset using Guid(68a52f5bba9df044d81e39e2bf500ca6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '468635107f136e6e9a11048c2d115a6c') in 0.0424267 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000033 seconds.
-  path: Assets/Graphics/Tilemap/MarioCloneSpriteSheet_300.asset
-  artifactKey: Guid(e70a1dad2b4012b429d9dedcf158c3d9) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Graphics/Tilemap/MarioCloneSpriteSheet_300.asset using Guid(e70a1dad2b4012b429d9dedcf158c3d9) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '65f2552a1de40a101555886842b3689c') in 0.0260204 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000048 seconds.
-  path: Assets/Graphics/Tilemap/MarioCloneSpriteSheet_194.asset
-  artifactKey: Guid(15ef89f8bc4fb2c498f357f366617fe4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Graphics/Tilemap/MarioCloneSpriteSheet_194.asset using Guid(15ef89f8bc4fb2c498f357f366617fe4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '778561c80d8149da33022b0eb5e5fb5a') in 0.0283439 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/Graphics/Tilemap/MarioCloneSpriteSheet_251.asset
-  artifactKey: Guid(eebf4c58ccb42a644a711b0d3708f5c8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Graphics/Tilemap/MarioCloneSpriteSheet_251.asset using Guid(eebf4c58ccb42a644a711b0d3708f5c8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '2a1b22a49161a8724e99b569ac1230e6') in 0.0232585 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000032 seconds.
-  path: Assets/Graphics/Tilemap/MarioCloneSpriteSheet_378.asset
-  artifactKey: Guid(8349b22b408575344bb319e07143695c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Graphics/Tilemap/MarioCloneSpriteSheet_378.asset using Guid(8349b22b408575344bb319e07143695c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'c94b581e3628a3016ea252cf3f388b51') in 0.0268109 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000045 seconds.
-  path: Assets/Graphics/Tilemap/MarioCloneSpriteSheet_127.asset
-  artifactKey: Guid(b0379a27b0ee73d48bf9b49aa602085e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Graphics/Tilemap/MarioCloneSpriteSheet_127.asset using Guid(b0379a27b0ee73d48bf9b49aa602085e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'dba50e71c46ec37d349c78d68372eca5') in 0.0265491 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/Graphics/Terrain/MarioCloneSpriteSheet.ase
-  artifactKey: Guid(28569014bc3793641934062ef8738439) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Graphics/Terrain/MarioCloneSpriteSheet.ase using Guid(28569014bc3793641934062ef8738439) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '49904318b1f323c831c9d19d7d001c51') in 0.8163165 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 452
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000078 seconds.
-  path: Assets/Graphics/Tilemap/MarioCloneSpriteSheet_179.asset
-  artifactKey: Guid(735ff41b6a651fc4a844d4f94ff79370) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Graphics/Tilemap/MarioCloneSpriteSheet_179.asset using Guid(735ff41b6a651fc4a844d4f94ff79370) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '476d7dad7b13fd0f3ff144981121b02f') in 0.0268124 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000051 seconds.
-  path: Assets/Graphics/Tilemap/MarioCloneSpriteSheet_236.asset
-  artifactKey: Guid(27c04e282ffe2724eb951f7337252ba7) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Graphics/Tilemap/MarioCloneSpriteSheet_236.asset using Guid(27c04e282ffe2724eb951f7337252ba7) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '53718ad48098027c603b99d2f93a9299') in 0.0273541 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000032 seconds.
-  path: Assets/Graphics/Tilemap/MarioCloneSpriteSheet_385.asset
-  artifactKey: Guid(f385bdaf545376f46939ced387a883b1) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Graphics/Tilemap/MarioCloneSpriteSheet_385.asset using Guid(f385bdaf545376f46939ced387a883b1) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'c5901b6483ed7daa011ce814c1b8144b') in 0.0268676 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/Graphics/Tilemap/MarioCloneSpriteSheet_261.asset
-  artifactKey: Guid(5cd0900fddbc7ac4da9d5720ce136a30) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Graphics/Tilemap/MarioCloneSpriteSheet_261.asset using Guid(5cd0900fddbc7ac4da9d5720ce136a30) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'e571535982b5323b928a4e9b60c7b5cb') in 0.0278911 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000035 seconds.
-  path: Assets/Graphics/Tilemap/MarioCloneSpriteSheet_26.asset
-  artifactKey: Guid(118879ca4cbefa441943e4b8e1b1f901) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Graphics/Tilemap/MarioCloneSpriteSheet_26.asset using Guid(118879ca4cbefa441943e4b8e1b1f901) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '269209580f4b6aaf7b22e9f36fb28df3') in 0.0272779 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000051 seconds.
-  path: Assets/Graphics/Tilemap/MarioCloneSpriteSheet_88.asset
-  artifactKey: Guid(2ea1585888f28b64fb1a6c9910bede52) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Graphics/Tilemap/MarioCloneSpriteSheet_88.asset using Guid(2ea1585888f28b64fb1a6c9910bede52) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '73192f6a553ec3122c14dcdda43f98eb') in 0.0260525 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000039 seconds.
-  path: Assets/Graphics/Tilemap/MarioCloneSpriteSheet_147.asset
-  artifactKey: Guid(076a8a81c5ed0214ca0caa579d70e3ba) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Graphics/Tilemap/MarioCloneSpriteSheet_147.asset using Guid(076a8a81c5ed0214ca0caa579d70e3ba) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '77510270c36661a8c3f7693df8ca1576') in 0.0333968 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000029 seconds.
-  path: Assets/Scripts/PowerUpScripts/ShroomController.cs
-  artifactKey: Guid(926f6de77c73d0b4084bc8e1339bc7e7) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Scripts/PowerUpScripts/ShroomController.cs using Guid(926f6de77c73d0b4084bc8e1339bc7e7) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '845125a3d1bf0b0ff1b18e38dc163536') in 0.0312236 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000126 seconds.
-  path: Assets/Graphics/Tilemap/MarioCloneSpriteSheet_381.asset
-  artifactKey: Guid(c875062f266ad984a9e90ac9b8ff0c9f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Graphics/Tilemap/MarioCloneSpriteSheet_381.asset using Guid(c875062f266ad984a9e90ac9b8ff0c9f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '878ee61ca8ec7f0d3e0db287342b218c') in 0.0373158 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000038 seconds.
-  path: Assets/Graphics/Tilemap/MarioCloneSpriteSheet_244.asset
-  artifactKey: Guid(bb49cafd2bdcbb04ea46c822b0c85a2e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Graphics/Tilemap/MarioCloneSpriteSheet_244.asset using Guid(bb49cafd2bdcbb04ea46c822b0c85a2e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '1cb62540b600f27f003d5ae6db560ee2') in 0.044655 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000097 seconds.
-  path: Assets/Graphics/Tilemap/MarioCloneSpriteSheet_380.asset
-  artifactKey: Guid(3b54bf1db0f5f5f44b3d442b0dd07a68) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Graphics/Tilemap/MarioCloneSpriteSheet_380.asset using Guid(3b54bf1db0f5f5f44b3d442b0dd07a68) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '57509a6d684ca6a3fc39fdbfc2f13595') in 0.0341321 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000045 seconds.
-  path: Assets/Graphics/Tilemap/MarioCloneSpriteSheet_43.asset
-  artifactKey: Guid(686dbfe481a16c14aaec4a3949258a20) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Graphics/Tilemap/MarioCloneSpriteSheet_43.asset using Guid(686dbfe481a16c14aaec4a3949258a20) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '945151701ac7293cdab161e2c68977c9') in 0.0268599 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/Graphics/Tilemap/MarioCloneSpriteSheet_39.asset
-  artifactKey: Guid(e40bb941e33c0964a91c81d03b0da447) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Graphics/Tilemap/MarioCloneSpriteSheet_39.asset using Guid(e40bb941e33c0964a91c81d03b0da447) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'a527e1fae2a9d4ea502337c80be8122c') in 0.0313174 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000034 seconds.
-  path: Assets/Graphics/Tilemap/MarioCloneSpriteSheet_319.asset
-  artifactKey: Guid(e063581e998cd9a43a1761f14a828cea) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Graphics/Tilemap/MarioCloneSpriteSheet_319.asset using Guid(e063581e998cd9a43a1761f14a828cea) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '5e7cd79f25d120b5d2a577541dfdd13d') in 0.0386894 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000070 seconds.
-  path: Assets/Graphics/Tilemap/MarioCloneSpriteSheet_448.asset
-  artifactKey: Guid(71325bae3a9caf94dae55ee3936b8f0b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Graphics/Tilemap/MarioCloneSpriteSheet_448.asset using Guid(71325bae3a9caf94dae55ee3936b8f0b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'a5ea30fa68e1d301f406b9bd2e54d935') in 0.0355049 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000044 seconds.
-  path: Assets/Graphics/Tilemap/MarioCloneSpriteSheet_284.asset
-  artifactKey: Guid(5edf756fbd21bfe40b864cf28ca2a8b2) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Graphics/Tilemap/MarioCloneSpriteSheet_284.asset using Guid(5edf756fbd21bfe40b864cf28ca2a8b2) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '1a8048428cd8574b7ee93e79592d6853') in 0.0401091 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000032 seconds.
-  path: Assets/Graphics/Tilemap/MarioCloneSpriteSheet_393.asset
-  artifactKey: Guid(ec7b1ab8e0a371d4aad50ad2d54eadf3) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Graphics/Tilemap/MarioCloneSpriteSheet_393.asset using Guid(ec7b1ab8e0a371d4aad50ad2d54eadf3) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'cd8d8375bc70a55c61f2c8dc4898ec7c') in 0.0242784 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
+Unloading 6926 unused Assets / (4.7 MB). Loaded Objects now: 7759.
+Memory consumption went from 155.9 MB to 151.2 MB.
+Total: 39.932900 ms (FindLiveObjects: 8.923200 ms CreateObjectMapping: 7.505600 ms MarkObjects: 16.168300 ms  DeleteObjects: 7.333400 ms)
+
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  1.370 seconds
+Refreshing native plugins compatible for Editor in 2.35 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.144 seconds
+Domain Reload Profiling: 2518ms
+	BeginReloadAssembly (486ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (21ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (1ms)
+		CreateAndSetChildDomain (107ms)
+	RebuildCommonClasses (68ms)
+	RebuildNativeTypeToScriptingClass (24ms)
+	initialDomainReloadingComplete (40ms)
+	LoadAllAssembliesAndSetupDomain (756ms)
+		LoadAssemblies (708ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (332ms)
+			TypeCache.Refresh (16ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (295ms)
+			ResolveRequiredComponents (15ms)
+	FinalizeReload (1144ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (900ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (3ms)
+			SetLoadedEditorAssemblies (9ms)
+			BeforeProcessingInitializeOnLoad (269ms)
+			ProcessInitializeOnLoadAttributes (500ms)
+			ProcessInitializeOnLoadMethodAttributes (115ms)
+			AfterProcessingInitializeOnLoad (2ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (21ms)
+Refreshing native plugins compatible for Editor in 1.95 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 16 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6924 unused Assets / (4.5 MB). Loaded Objects now: 7763.
+Memory consumption went from 156.7 MB to 152.2 MB.
+Total: 15.399400 ms (FindLiveObjects: 1.660900 ms CreateObjectMapping: 1.400800 ms MarkObjects: 7.993800 ms  DeleteObjects: 4.342500 ms)
+
+Prepare: number of updated asset objects reloaded= 0
 Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
 AssetImportWorker is now disconnected from the server
 Process exiting

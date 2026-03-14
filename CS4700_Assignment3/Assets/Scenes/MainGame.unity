@@ -1506,6 +1506,16 @@ Tilemap:
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
       m_AllTileFlags: 1073741825
+  - first: {x: 19, y: -3, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 3
+      m_TileSpriteIndex: 3
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 1073741825
   - first: {x: 20, y: -3, z: 0}
     second:
       serializedVersion: 2
@@ -1634,7 +1644,7 @@ Tilemap:
     m_Data: {fileID: 11400000, guid: 7f30b1516a864454998ad2650fc10fbf, type: 2}
   - m_RefCount: 33
     m_Data: {fileID: 11400000, guid: 9a990b53a244c30498ca7ea629dd8685, type: 2}
-  - m_RefCount: 4
+  - m_RefCount: 5
     m_Data: {fileID: 11400000, guid: fbb5996d6faccde4ebe2a93e9e0bd9c5, type: 2}
   - m_RefCount: 4
     m_Data: {fileID: 11400000, guid: 8a2ea989843faa142ad04d349dfb8ec7, type: 2}
@@ -1657,7 +1667,7 @@ Tilemap:
     m_Data: {fileID: 1711349601273213919, guid: 28569014bc3793641934062ef8738439, type: 3}
   - m_RefCount: 33
     m_Data: {fileID: -2940315958061432377, guid: 28569014bc3793641934062ef8738439, type: 3}
-  - m_RefCount: 4
+  - m_RefCount: 5
     m_Data: {fileID: 4500832664639592135, guid: 28569014bc3793641934062ef8738439, type: 3}
   - m_RefCount: 4
     m_Data: {fileID: 5774051786908750098, guid: 28569014bc3793641934062ef8738439, type: 3}
@@ -1674,7 +1684,7 @@ Tilemap:
   - m_RefCount: 2
     m_Data: {fileID: 649235947917148281, guid: 28569014bc3793641934062ef8738439, type: 3}
   m_TileMatrixArray:
-  - m_RefCount: 120
+  - m_RefCount: 121
     m_Data:
       e00: 1
       e01: 0
@@ -1693,7 +1703,7 @@ Tilemap:
       e32: 0
       e33: 1
   m_TileColorArray:
-  - m_RefCount: 120
+  - m_RefCount: 121
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
@@ -1773,6 +1783,10 @@ CompositeCollider2D:
       - X: 199666672
         Y: 333333
       - X: 199666672
+        Y: -19666666
+      - X: 189666672
+        Y: -19666666
+      - X: 189666672
         Y: -29666666
       - X: 159666656
         Y: -29666666
@@ -1833,7 +1847,9 @@ CompositeCollider2D:
       - {x: 21.966667, y: -0.3666655}
       - {x: 21.966639, y: 0.0333333}
       - {x: 19.966667, y: 0.033304002}
-      - {x: 19.966639, y: -2.9666667}
+      - {x: 19.966639, y: -1.9666666}
+      - {x: 18.966667, y: -1.966696}
+      - {x: 18.966639, y: -2.9666667}
       - {x: 15.966666, y: -2.966696}
       - {x: 15.966695, y: -5.0333333}
     - - {x: 46.033306, y: -5.0333333}
@@ -2113,7 +2129,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.CanvasScaler
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
@@ -5847,7 +5863,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 0.60691816, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
