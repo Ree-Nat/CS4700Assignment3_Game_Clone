@@ -24,7 +24,7 @@ public class Player : MonoBehaviour {
     private void Start()
     {
         powerManager = new PowerManager();
-        this._defaultLives = 3;
+        this._defaultLives = 1;
         _currentState = PowerState.None;
     }
 
@@ -66,6 +66,7 @@ public class Player : MonoBehaviour {
 
     }
 
+ 
     public void setPower(PowerState power)
     {
         powerManager.changePlayerPower(this, power);

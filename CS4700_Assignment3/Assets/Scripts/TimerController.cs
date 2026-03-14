@@ -1,3 +1,7 @@
+
+//CODE IS NOW DEPRICATED SINCE HUDMANAGER CONTROLS TIME.
+
+/****************
 using UnityEngine;
 public class TimerController : MonoBehaviour
 /***************************************************************
@@ -9,7 +13,7 @@ public class TimerController : MonoBehaviour
 *
 *purpose: This program controls the game timer. After checking if it is 0, sends a game over message to GameManager object
 *
-****************************************************************/
+
 {
 
     public float maxTime = 256;
@@ -71,3 +75,4 @@ public class TimerController : MonoBehaviour
     }
 
 }
+****************************************************************/

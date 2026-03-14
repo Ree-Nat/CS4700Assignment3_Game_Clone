@@ -6,6 +6,7 @@ TagManager:
   tags:
   - SpecialBrick
   - Enemy
+  - GroundObject
   layers:
   - Default
   - TransparentFX

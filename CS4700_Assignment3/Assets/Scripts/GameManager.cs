@@ -16,8 +16,6 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
-
-    TimerController timerController;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
 
     

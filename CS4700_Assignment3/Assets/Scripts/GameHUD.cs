@@ -4,7 +4,7 @@ using Unity.VisualScripting;
 
 /***************************************************************
 *file: GameHUD.cs
-*author: T. Diaz
+*author: Jacob Takaoka
 *class: CS 4700-1 Game Development
 *assignment: program 3
 *date last modified: 3/14/2026
@@ -16,6 +16,7 @@ public class GameHUD : MonoBehaviour
 {
     public TextMeshProUGUI coinText;
     public TextMeshProUGUI timerText;
+    [SerializeField] private Timer timer;
 
     public int coins = 0;
     public float levelTime = 300f;
@@ -32,6 +33,10 @@ public class GameHUD : MonoBehaviour
         {
             levelTime -= Time.deltaTime;
             UpdateTimerUI();
+        }
+        else if (levelTime < 0)
+        {
+           GameManager.gameManagerInstance.gameOver();
         }
     }
 

@@ -129,7 +129,7 @@ public class ShellController : MonoBehaviour
 
     private void OnCollisionExit2D(Collision2D collision)
     {
-        if(collision.gameObject.layer == 3) //If destructable layer
+        if(collision.gameObject.layer == 3 || collision.gameObject.CompareTag("GroundObject")) //If destructable layer
         {
             Destroy(collision.gameObject);
         }
