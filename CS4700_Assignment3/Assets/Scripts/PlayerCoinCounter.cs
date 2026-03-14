@@ -12,9 +12,13 @@ public class PlayerCoinCounter : MonoBehaviour
 {
     public int coins = 0;
 
+    public GameHUD hud;   
+
     public void AddCoins(int amount)
     {
         coins += amount;
-        Debug.Log("Coins: " + coins);
+
+        if (hud != null)
+            hud.UpdateCoinUI(coins);
     }
 }

@@ -22,7 +22,9 @@ public class Coin : MonoBehaviour
             PlayerCoinCounter counter = other.GetComponent<PlayerCoinCounter>();
 
             if (counter != null)
+            {
                 counter.AddCoins(value);
+            }
 
             Destroy(gameObject);
         }
